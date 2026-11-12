@@ -1,4 +1,4 @@
-# Firmware ESP32 — Fila Virtual
+# Firmware ESP32 — ThriveQueue
 
 - Projeto no Wokwi: https://wokwi.com/projects/480520205989381121
 - Placa: ESP32 DevKit V1 (simulada)

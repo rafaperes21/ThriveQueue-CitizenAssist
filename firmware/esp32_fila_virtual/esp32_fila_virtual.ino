@@ -1,4 +1,4 @@
-// Fila Virtual - Citizen Assist AI
+// ThriveQueue - fila virtual do Citizen Assist AI
 // GS 2026.2 - Computer Organization and Architecture (1CC-FEV)
 // Rafael Marinucci Peres (RM 569729) e David dos Reis Cardoso (RM 568938)
 //
@@ -440,7 +440,7 @@ void tarefaRede(void* parametro) {
 
 void setup() {
   Serial.begin(115200);
-  Serial.println("Fila Virtual - Citizen Assist AI");
+  Serial.println("ThriveQueue - Citizen Assist AI");
   Serial.println("Prototipo academico, nao e um canal oficial.");
 
   pinMode(BTN_CHEGADA, INPUT_PULLUP);
@@ -450,8 +450,8 @@ void setup() {
 
   lcd.init();
   lcd.backlight();
-  escreverLinha(0, "Citizen Assist");
-  escreverLinha(1, "Fila Virtual");
+  escreverLinha(0, "ThriveQueue");
+  escreverLinha(1, "Citizen Assist");
 
   digitalWrite(LED_VERDE, HIGH);
   digitalWrite(LED_VERMELHO, HIGH);

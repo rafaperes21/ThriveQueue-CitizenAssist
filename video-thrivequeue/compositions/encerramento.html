@@ -1,0 +1,112 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "Inter", sans-serif;
+      color: #ffffff;
+    }
+    #en-fundo {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(120% 90% at 80% 20%, #0e7490 0%, #065f46 45%, #062a20 100%);
+    }
+    #en-grupo {
+      position: absolute;
+      left: 240px;
+      top: 250px;
+    }
+    #en-marca {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    #en-icone {
+      width: 104px;
+      height: 104px;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 2px solid rgba(255, 255, 255, 0.32);
+      display: grid;
+      place-items: center;
+    }
+    #en-icone svg {
+      width: 58px;
+      height: 58px;
+      fill: none;
+      stroke: #ffffff;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    #en-nome {
+      font-size: 120px;
+      font-weight: 900;
+      letter-spacing: -0.035em;
+    }
+    #en-frase {
+      margin-top: 28px;
+      font-size: 44px;
+      font-weight: 700;
+      color: #d1fae5;
+    }
+    #en-itens {
+      margin-top: 18px;
+      font-size: 32px;
+      color: #c7ddd3;
+    }
+    #en-linha {
+      margin-top: 56px;
+      width: 120px;
+      height: 6px;
+      border-radius: 3px;
+      background: #f59e0b;
+    }
+    #en-nomes {
+      margin-top: 28px;
+      font-size: 30px;
+    }
+    #en-link {
+      margin-top: 12px;
+      font-size: 28px;
+      color: #a7f3d0;
+    }
+    #en-aviso {
+      margin-top: 40px;
+      font-size: 28px;
+      color: #c7ddd3;
+    }
+  </style>
+  <div id="root" data-composition-id="encerramento" data-width="1920" data-height="1080">
+    <div id="en-cena" class="clip" data-start="0" data-duration="6.4" data-track-index="0">
+      <div id="en-fundo"></div>
+      <div id="en-grupo">
+        <div id="en-marca">
+          <div id="en-icone">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+            </svg>
+          </div>
+          <div id="en-nome">ThriveQueue</div>
+        </div>
+        <div id="en-frase">Conta a fila sem erros, prevê a espera com IA e mostra tudo na internet.</div>
+        <div id="en-itens">ESP32 dual-core · MQTT · regressão linear · dashboard acessível</div>
+        <div id="en-linha"></div>
+        <div id="en-nomes">Rafael Marinucci Peres (RM 569729) · David dos Reis Cardoso (RM 568938)</div>
+        <div id="en-link">Simulação: wokwi.com/projects/480520205989381121</div>
+        <div id="en-aviso">Protótipo acadêmico · FIAP · Global Solution 2026.2 · não é um canal oficial</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#en-fundo", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power1.out" }, 0);
+    tl.fromTo("#en-marca", { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.35);
+    tl.fromTo("#en-frase", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.7);
+    tl.fromTo("#en-itens", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.9);
+    tl.fromTo("#en-linha", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.5, ease: "power2.out" }, 1.1);
+    tl.fromTo(["#en-nomes", "#en-link", "#en-aviso"], { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out", stagger: 0.12 }, 1.25);
+    window.__timelines["encerramento"] = tl;
+  </script>
+</template>

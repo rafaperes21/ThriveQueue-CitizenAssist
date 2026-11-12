@@ -1,4 +1,4 @@
-# Roteiro do vídeo — Fila Virtual (até 5 min)
+# Roteiro do vídeo — ThriveQueue (até 5 min)
 
 **Meta: 4min40s**, para sobrar folga. O enunciado pede um vídeo "apresentando o protótipo e suas funcionalidades". O pitch de 3 min do prêmio da GS é outro vídeo e não entra aqui.
 
@@ -32,7 +32,7 @@
 
 **Tela:** dashboard com a fila vazia.
 
-> "Oi, eu sou o Rafael, RM 569729, e esse é o David, RM 568938. Esse é o nosso projeto de Computer Organization and Architecture da Global Solution: um sistema de fila virtual para o Citizen Assist AI.
+> "Oi, eu sou o Rafael, RM 569729, e esse é o David, RM 568938. Esse é o ThriveQueue, o nosso projeto de Computer Organization and Architecture da Global Solution: um sistema de fila virtual para o Citizen Assist AI.
 > A ideia é simples: quem chega num posto de atendimento não sabe quantas pessoas estão na frente nem quanto vai esperar. O nosso sistema conta a fila com botões, estima a espera com inteligência artificial e mostra tudo na internet."
 
 ## 2. Arquitetura (0:30 – 1:20) · David
@@ -85,7 +85,7 @@
 
 **Tela:** rodapé do dashboard com o aviso.
 
-> "Então o sistema conta a fila sem erros, prevê a espera com IA e mostra tudo na internet. Lembrando que é um protótipo acadêmico, não é um canal oficial, e não coleta nenhum dado pessoal. Valeu!"
+> "Então o ThriveQueue conta a fila sem erros, prevê a espera com IA e mostra tudo na internet. Lembrando que é um protótipo acadêmico, não é um canal oficial, e não coleta nenhum dado pessoal. Valeu!"
 
 ---
 

@@ -19,7 +19,7 @@
   </defs>
 
   <rect width="1400" height="880" fill="#ffffff"/>
-  <text x="40" y="48" class="titulo">Arquitetura do sistema — Fila Virtual (Citizen Assist AI)</text>
+  <text x="40" y="48" class="titulo">Arquitetura do sistema — ThriveQueue (Citizen Assist AI)</text>
   <text x="40" y="74" class="sub">ESP32 simulado no Wokwi · backend Python · dashboard web</text>
 
   <!-- ENTRADA -->

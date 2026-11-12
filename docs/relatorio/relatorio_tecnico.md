@@ -1,8 +1,8 @@
 <div class="capa">
 <p class="instituicao">FIAP · Ciência da Computação · Turma 1CC-FEV</p>
 <p class="disciplina">Computer Organization and Architecture · Global Solution 2026.2</p>
-<h1>Sistema Inteligente de Gerenciamento de Filas Virtuais</h1>
-<p class="subtitulo">Projeto integrador Citizen Assist AI · Relatório técnico</p>
+<h1>ThriveQueue</h1>
+<p class="subtitulo">Sistema Inteligente de Gerenciamento de Filas Virtuais<br>Projeto integrador Citizen Assist AI · Relatório técnico</p>
 <p class="integrantes">Rafael Marinucci Peres — RM 569729<br>David dos Reis Cardoso — RM 568938</p>
 <p class="links">Simulação (Wokwi): https://wokwi.com/projects/480520205989381121</p>
 <p class="data">São Paulo, novembro de 2026</p>
@@ -12,7 +12,7 @@
 
 Em postos de atendimento, unidades de saúde, bibliotecas e secretarias, quem chega não sabe quantas pessoas estão na frente nem quanto tempo vai esperar. Sem essa informação, o cidadão não consegue planejar o dia, e quem tem mais dificuldade de ficar em pé esperando (idosos, gestantes, pessoas com deficiência) é o mais prejudicado.
 
-Este trabalho faz parte do Citizen Assist AI, o assistente digital que a turma está construindo na Global Solution. Aqui a contribuição é um **módulo de informação em tempo real**: uma fila virtual que
+Este trabalho faz parte do Citizen Assist AI, o assistente digital que a turma está construindo na Global Solution. Aqui a contribuição é o **ThriveQueue**, um módulo de informação em tempo real: uma fila virtual que
 
 - registra a chegada de uma pessoa e a conclusão de um atendimento por meio de botões;
 - mantém o total de pessoas aguardando, sem aceitar operações inválidas;

@@ -1,0 +1,416 @@
+[
+  {
+    "id": "w0",
+    "text": "Oi,",
+    "start": 3.26,
+    "end": 3.82
+  },
+  {
+    "id": "w1",
+    "text": "boa",
+    "start": 3.82,
+    "end": 4.22
+  },
+  {
+    "id": "w2",
+    "text": "noite.",
+    "start": 4.22,
+    "end": 5.18
+  },
+  {
+    "id": "w3",
+    "text": "Hoje",
+    "start": 5.18,
+    "end": 5.74
+  },
+  {
+    "id": "w4",
+    "text": "eu",
+    "start": 5.74,
+    "end": 5.82
+  },
+  {
+    "id": "w5",
+    "text": "vou",
+    "start": 5.82,
+    "end": 6.06
+  },
+  {
+    "id": "w6",
+    "text": "mostrar",
+    "start": 6.06,
+    "end": 6.46
+  },
+  {
+    "id": "w7",
+    "text": "para",
+    "start": 6.46,
+    "end": 6.7
+  },
+  {
+    "id": "w8",
+    "text": "vocês",
+    "start": 6.7,
+    "end": 7.18
+  },
+  {
+    "id": "w9",
+    "text": "o",
+    "start": 7.18,
+    "end": 7.34
+  },
+  {
+    "id": "w10",
+    "text": "nosso",
+    "start": 7.34,
+    "end": 7.66
+  },
+  {
+    "id": "w11",
+    "text": "projeto",
+    "start": 7.66,
+    "end": 8.14
+  },
+  {
+    "id": "w12",
+    "text": "de",
+    "start": 8.14,
+    "end": 8.3
+  },
+  {
+    "id": "w13",
+    "text": "Computer",
+    "start": 8.3,
+    "end": 8.94
+  },
+  {
+    "id": "w14",
+    "text": "Organization",
+    "start": 8.94,
+    "end": 9.74
+  },
+  {
+    "id": "w15",
+    "text": "and",
+    "start": 9.74,
+    "end": 10.06
+  },
+  {
+    "id": "w16",
+    "text": "Architecture",
+    "start": 10.06,
+    "end": 11.1
+  },
+  {
+    "id": "w17",
+    "text": "da",
+    "start": 11.1,
+    "end": 11.34
+  },
+  {
+    "id": "w18",
+    "text": "Global",
+    "start": 11.34,
+    "end": 11.82
+  },
+  {
+    "id": "w19",
+    "text": "Solution.",
+    "start": 11.82,
+    "end": 12.7
+  },
+  {
+    "id": "w20",
+    "text": "Ele",
+    "start": 12.7,
+    "end": 12.94
+  },
+  {
+    "id": "w21",
+    "text": "é",
+    "start": 12.94,
+    "end": 13.1
+  },
+  {
+    "id": "w22",
+    "text": "um",
+    "start": 13.1,
+    "end": 13.26
+  },
+  {
+    "id": "w23",
+    "text": "sistema",
+    "start": 13.26,
+    "end": 13.58
+  },
+  {
+    "id": "w24",
+    "text": "de",
+    "start": 13.9,
+    "end": 14.14
+  },
+  {
+    "id": "w25",
+    "text": "fila",
+    "start": 14.14,
+    "end": 14.54
+  },
+  {
+    "id": "w26",
+    "text": "virtual",
+    "start": 14.54,
+    "end": 14.86
+  },
+  {
+    "id": "w27",
+    "text": "para",
+    "start": 14.86,
+    "end": 15.1
+  },
+  {
+    "id": "w28",
+    "text": "CitySen",
+    "start": 15.1,
+    "end": 15.66
+  },
+  {
+    "id": "w29",
+    "text": "SCCI.",
+    "start": 15.82,
+    "end": 16.86
+  },
+  {
+    "id": "w30",
+    "text": "A",
+    "start": 17.1,
+    "end": 17.34
+  },
+  {
+    "id": "w31",
+    "text": "ideia",
+    "start": 17.34,
+    "end": 17.66
+  },
+  {
+    "id": "w32",
+    "text": "é",
+    "start": 17.66,
+    "end": 17.82
+  },
+  {
+    "id": "w33",
+    "text": "simples.",
+    "start": 17.82,
+    "end": 18.62
+  },
+  {
+    "id": "w34",
+    "text": "Quem",
+    "start": 18.62,
+    "end": 18.86
+  },
+  {
+    "id": "w35",
+    "text": "chega",
+    "start": 18.86,
+    "end": 19.26
+  },
+  {
+    "id": "w36",
+    "text": "num",
+    "start": 19.26,
+    "end": 19.42
+  },
+  {
+    "id": "w37",
+    "text": "posto",
+    "start": 19.5,
+    "end": 19.66
+  },
+  {
+    "id": "w38",
+    "text": "de",
+    "start": 19.9,
+    "end": 19.98
+  },
+  {
+    "id": "w39",
+    "text": "atendimento",
+    "start": 19.98,
+    "end": 20.62
+  },
+  {
+    "id": "w40",
+    "text": "não",
+    "start": 20.7,
+    "end": 20.86
+  },
+  {
+    "id": "w41",
+    "text": "sabe",
+    "start": 20.86,
+    "end": 21.18
+  },
+  {
+    "id": "w42",
+    "text": "quantas",
+    "start": 21.18,
+    "end": 21.58
+  },
+  {
+    "id": "w43",
+    "text": "pessoas",
+    "start": 21.58,
+    "end": 21.9
+  },
+  {
+    "id": "w44",
+    "text": "estão",
+    "start": 22.06,
+    "end": 22.22
+  },
+  {
+    "id": "w45",
+    "text": "na",
+    "start": 22.22,
+    "end": 22.38
+  },
+  {
+    "id": "w46",
+    "text": "frente",
+    "start": 22.38,
+    "end": 22.86
+  },
+  {
+    "id": "w47",
+    "text": "e",
+    "start": 22.86,
+    "end": 23.02
+  },
+  {
+    "id": "w48",
+    "text": "nem",
+    "start": 23.02,
+    "end": 23.34
+  },
+  {
+    "id": "w49",
+    "text": "quanto",
+    "start": 23.34,
+    "end": 23.66
+  },
+  {
+    "id": "w50",
+    "text": "vai",
+    "start": 23.66,
+    "end": 23.9
+  },
+  {
+    "id": "w51",
+    "text": "esperar.",
+    "start": 23.9,
+    "end": 24.7
+  },
+  {
+    "id": "w52",
+    "text": "O",
+    "start": 24.7,
+    "end": 24.78
+  },
+  {
+    "id": "w53",
+    "text": "nosso",
+    "start": 24.94,
+    "end": 25.34
+  },
+  {
+    "id": "w54",
+    "text": "sistema",
+    "start": 25.34,
+    "end": 25.66
+  },
+  {
+    "id": "w55",
+    "text": "conta",
+    "start": 25.82,
+    "end": 26.22
+  },
+  {
+    "id": "w56",
+    "text": "fila",
+    "start": 26.3,
+    "end": 26.7
+  },
+  {
+    "id": "w57",
+    "text": "com",
+    "start": 26.7,
+    "end": 26.86
+  },
+  {
+    "id": "w58",
+    "text": "botões,",
+    "start": 26.86,
+    "end": 27.34
+  },
+  {
+    "id": "w59",
+    "text": "Shima",
+    "start": 27.5,
+    "end": 28.06
+  },
+  {
+    "id": "w60",
+    "text": "espera",
+    "start": 28.22,
+    "end": 28.54
+  },
+  {
+    "id": "w61",
+    "text": "com",
+    "start": 28.62,
+    "end": 28.78
+  },
+  {
+    "id": "w62",
+    "text": "inteligência",
+    "start": 28.78,
+    "end": 29.34
+  },
+  {
+    "id": "w63",
+    "text": "artificial",
+    "start": 29.34,
+    "end": 29.98
+  },
+  {
+    "id": "w64",
+    "text": "e",
+    "start": 29.98,
+    "end": 30.22
+  },
+  {
+    "id": "w65",
+    "text": "mostra",
+    "start": 30.22,
+    "end": 30.62
+  },
+  {
+    "id": "w66",
+    "text": "tudo",
+    "start": 30.62,
+    "end": 30.94
+  },
+  {
+    "id": "w67",
+    "text": "na",
+    "start": 30.94,
+    "end": 31.18
+  },
+  {
+    "id": "w68",
+    "text": "internet.",
+    "start": 31.18,
+    "end": 32.14
+  }
+]

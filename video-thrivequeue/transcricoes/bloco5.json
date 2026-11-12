@@ -1,0 +1,782 @@
+[
+  {
+    "id": "w0",
+    "text": "Com",
+    "start": 5.44,
+    "end": 5.76
+  },
+  {
+    "id": "w1",
+    "text": "o",
+    "start": 5.76,
+    "end": 5.92
+  },
+  {
+    "id": "w2",
+    "text": "comando",
+    "start": 5.92,
+    "end": 6.4
+  },
+  {
+    "id": "w3",
+    "text": "S,",
+    "start": 6.4,
+    "end": 6.88
+  },
+  {
+    "id": "w4",
+    "text": "o",
+    "start": 6.88,
+    "end": 6.96
+  },
+  {
+    "id": "w5",
+    "text": "próprio",
+    "start": 6.96,
+    "end": 7.36
+  },
+  {
+    "id": "w6",
+    "text": "FP32",
+    "start": 7.36,
+    "end": 8.4
+  },
+  {
+    "id": "w7",
+    "text": "mostra",
+    "start": 8.4,
+    "end": 8.8
+  },
+  {
+    "id": "w8",
+    "text": "os",
+    "start": 8.8,
+    "end": 8.88
+  },
+  {
+    "id": "w9",
+    "text": "números",
+    "start": 8.88,
+    "end": 9.28
+  },
+  {
+    "id": "w10",
+    "text": "para",
+    "start": 9.28,
+    "end": 9.44
+  },
+  {
+    "id": "w11",
+    "text": "análise.",
+    "start": 9.52,
+    "end": 10.32
+  },
+  {
+    "id": "w12",
+    "text": "O",
+    "start": 10.32,
+    "end": 10.48
+  },
+  {
+    "id": "w13",
+    "text": "programa",
+    "start": 10.48,
+    "end": 10.88
+  },
+  {
+    "id": "w14",
+    "text": "ocupa",
+    "start": 10.88,
+    "end": 11.36
+  },
+  {
+    "id": "w15",
+    "text": "963",
+    "start": 11.36,
+    "end": 12.32
+  },
+  {
+    "id": "w16",
+    "text": "KB",
+    "start": 12.48,
+    "end": 12.96
+  },
+  {
+    "id": "w17",
+    "text": "da",
+    "start": 12.96,
+    "end": 13.12
+  },
+  {
+    "id": "w18",
+    "text": "flash.",
+    "start": 13.12,
+    "end": 13.68
+  },
+  {
+    "id": "w19",
+    "text": "Sobram",
+    "start": 13.68,
+    "end": 14.08
+  },
+  {
+    "id": "w20",
+    "text": "mais",
+    "start": 14.16,
+    "end": 14.32
+  },
+  {
+    "id": "w21",
+    "text": "de",
+    "start": 14.32,
+    "end": 14.4
+  },
+  {
+    "id": "w22",
+    "text": "200",
+    "start": 14.4,
+    "end": 14.72
+  },
+  {
+    "id": "w23",
+    "text": "KB",
+    "start": 14.8,
+    "end": 15.2
+  },
+  {
+    "id": "w24",
+    "text": "de",
+    "start": 15.2,
+    "end": 15.36
+  },
+  {
+    "id": "w25",
+    "text": "hip,",
+    "start": 15.36,
+    "end": 15.92
+  },
+  {
+    "id": "w26",
+    "text": "e",
+    "start": 15.92,
+    "end": 16.08
+  },
+  {
+    "id": "w27",
+    "text": "cada",
+    "start": 16.08,
+    "end": 16.32
+  },
+  {
+    "id": "w28",
+    "text": "evento",
+    "start": 16.32,
+    "end": 16.64
+  },
+  {
+    "id": "w29",
+    "text": "ocupa",
+    "start": 16.64,
+    "end": 17.04
+  },
+  {
+    "id": "w30",
+    "text": "só",
+    "start": 17.04,
+    "end": 17.28
+  },
+  {
+    "id": "w31",
+    "text": "8",
+    "start": 17.28,
+    "end": 17.6
+  },
+  {
+    "id": "w32",
+    "text": "bytes.",
+    "start": 17.6,
+    "end": 18.16
+  },
+  {
+    "id": "w33",
+    "text": "Quem",
+    "start": 18.4,
+    "end": 18.8
+  },
+  {
+    "id": "w34",
+    "text": "mais",
+    "start": 18.8,
+    "end": 18.96
+  },
+  {
+    "id": "w35",
+    "text": "gasta",
+    "start": 18.96,
+    "end": 19.28
+  },
+  {
+    "id": "w36",
+    "text": "memória",
+    "start": 19.52,
+    "end": 19.92
+  },
+  {
+    "id": "w37",
+    "text": "é",
+    "start": 20,
+    "end": 20.16
+  },
+  {
+    "id": "w38",
+    "text": "a",
+    "start": 20.16,
+    "end": 20.24
+  },
+  {
+    "id": "w39",
+    "text": "pilha",
+    "start": 20.32,
+    "end": 20.72
+  },
+  {
+    "id": "w40",
+    "text": "de",
+    "start": 20.72,
+    "end": 20.88
+  },
+  {
+    "id": "w41",
+    "text": "rede,",
+    "start": 20.88,
+    "end": 21.36
+  },
+  {
+    "id": "w42",
+    "text": "não",
+    "start": 21.36,
+    "end": 21.6
+  },
+  {
+    "id": "w43",
+    "text": "a",
+    "start": 21.6,
+    "end": 21.68
+  },
+  {
+    "id": "w44",
+    "text": "fila.",
+    "start": 21.68,
+    "end": 22.4
+  },
+  {
+    "id": "w45",
+    "text": "Medindo",
+    "start": 22.4,
+    "end": 22.88
+  },
+  {
+    "id": "w46",
+    "text": "o",
+    "start": 23.04,
+    "end": 23.12
+  },
+  {
+    "id": "w47",
+    "text": "tempo",
+    "start": 23.12,
+    "end": 23.28
+  },
+  {
+    "id": "w48",
+    "text": "do",
+    "start": 23.36,
+    "end": 23.52
+  },
+  {
+    "id": "w49",
+    "text": "loop,",
+    "start": 23.52,
+    "end": 24.08
+  },
+  {
+    "id": "w50",
+    "text": "achamos",
+    "start": 24.08,
+    "end": 24.4
+  },
+  {
+    "id": "w51",
+    "text": "um",
+    "start": 24.56,
+    "end": 24.72
+  },
+  {
+    "id": "w52",
+    "text": "problema",
+    "start": 24.72,
+    "end": 25.04
+  },
+  {
+    "id": "w53",
+    "text": "na",
+    "start": 25.04,
+    "end": 25.2
+  },
+  {
+    "id": "w54",
+    "text": "primeira",
+    "start": 25.2,
+    "end": 25.52
+  },
+  {
+    "id": "w55",
+    "text": "versão.",
+    "start": 25.52,
+    "end": 26.16
+  },
+  {
+    "id": "w56",
+    "text": "Quando",
+    "start": 26.16,
+    "end": 26.4
+  },
+  {
+    "id": "w57",
+    "text": "o",
+    "start": 26.4,
+    "end": 26.64
+  },
+  {
+    "id": "w58",
+    "text": "MKTT",
+    "start": 26.64,
+    "end": 27.92
+  },
+  {
+    "id": "w59",
+    "text": "reconectava,",
+    "start": 27.92,
+    "end": 28.64
+  },
+  {
+    "id": "w60",
+    "text": "o",
+    "start": 28.64,
+    "end": 28.72
+  },
+  {
+    "id": "w61",
+    "text": "loop",
+    "start": 28.72,
+    "end": 28.96
+  },
+  {
+    "id": "w62",
+    "text": "travava",
+    "start": 29.12,
+    "end": 29.6
+  },
+  {
+    "id": "w63",
+    "text": "por",
+    "start": 29.6,
+    "end": 29.76
+  },
+  {
+    "id": "w64",
+    "text": "4,4",
+    "start": 29.76,
+    "end": 30.72
+  },
+  {
+    "id": "w65",
+    "text": "segundos.",
+    "start": 30.72,
+    "end": 31.44
+  },
+  {
+    "id": "w66",
+    "text": "E",
+    "start": 31.44,
+    "end": 31.68
+  },
+  {
+    "id": "w67",
+    "text": "um",
+    "start": 31.68,
+    "end": 31.84
+  },
+  {
+    "id": "w68",
+    "text": "clique",
+    "start": 31.84,
+    "end": 32.24
+  },
+  {
+    "id": "w69",
+    "text": "nesse",
+    "start": 32.24,
+    "end": 32.48
+  },
+  {
+    "id": "w70",
+    "text": "momento",
+    "start": 32.48,
+    "end": 32.72
+  },
+  {
+    "id": "w71",
+    "text": "seria",
+    "start": 32.88,
+    "end": 33.28
+  },
+  {
+    "id": "w72",
+    "text": "perdido.",
+    "start": 33.28,
+    "end": 33.92
+  },
+  {
+    "id": "w73",
+    "text": "A",
+    "start": 33.92,
+    "end": 34.08
+  },
+  {
+    "id": "w74",
+    "text": "solução",
+    "start": 34.08,
+    "end": 34.56
+  },
+  {
+    "id": "w75",
+    "text": "foi",
+    "start": 34.56,
+    "end": 34.72
+  },
+  {
+    "id": "w76",
+    "text": "usar",
+    "start": 34.88,
+    "end": 35.12
+  },
+  {
+    "id": "w77",
+    "text": "os",
+    "start": 35.12,
+    "end": 35.28
+  },
+  {
+    "id": "w78",
+    "text": "dois",
+    "start": 35.28,
+    "end": 35.36
+  },
+  {
+    "id": "w79",
+    "text": "núcleos.",
+    "start": 35.52,
+    "end": 36.16
+  },
+  {
+    "id": "w80",
+    "text": "A",
+    "start": 36.16,
+    "end": 36.32
+  },
+  {
+    "id": "w81",
+    "text": "rede",
+    "start": 36.32,
+    "end": 36.72
+  },
+  {
+    "id": "w82",
+    "text": "foi",
+    "start": 36.72,
+    "end": 36.88
+  },
+  {
+    "id": "w83",
+    "text": "para",
+    "start": 36.88,
+    "end": 37.12
+  },
+  {
+    "id": "w84",
+    "text": "uma",
+    "start": 37.12,
+    "end": 37.28
+  },
+  {
+    "id": "w85",
+    "text": "tarefa",
+    "start": 37.28,
+    "end": 37.68
+  },
+  {
+    "id": "w86",
+    "text": "no",
+    "start": 37.68,
+    "end": 37.84
+  },
+  {
+    "id": "w87",
+    "text": "núcleo",
+    "start": 37.84,
+    "end": 38.24
+  },
+  {
+    "id": "w88",
+    "text": "0.",
+    "start": 38.24,
+    "end": 38.64
+  },
+  {
+    "id": "w89",
+    "text": "E",
+    "start": 38.64,
+    "end": 38.8
+  },
+  {
+    "id": "w90",
+    "text": "os",
+    "start": 38.8,
+    "end": 38.96
+  },
+  {
+    "id": "w91",
+    "text": "botões",
+    "start": 38.96,
+    "end": 39.44
+  },
+  {
+    "id": "w92",
+    "text": "ficaram",
+    "start": 39.44,
+    "end": 39.76
+  },
+  {
+    "id": "w93",
+    "text": "sozinhos",
+    "start": 39.76,
+    "end": 40.24
+  },
+  {
+    "id": "w94",
+    "text": "no",
+    "start": 40.24,
+    "end": 40.4
+  },
+  {
+    "id": "w95",
+    "text": "núcleo",
+    "start": 40.4,
+    "end": 40.8
+  },
+  {
+    "id": "w96",
+    "text": "1.",
+    "start": 40.8,
+    "end": 41.12
+  },
+  {
+    "id": "w97",
+    "text": "Com",
+    "start": 41.12,
+    "end": 41.28
+  },
+  {
+    "id": "w98",
+    "text": "o",
+    "start": 41.36,
+    "end": 41.52
+  },
+  {
+    "id": "w99",
+    "text": "mutex",
+    "start": 41.52,
+    "end": 42.08
+  },
+  {
+    "id": "w100",
+    "text": "protegendo",
+    "start": 42.16,
+    "end": 42.72
+  },
+  {
+    "id": "w101",
+    "text": "o",
+    "start": 42.72,
+    "end": 42.8
+  },
+  {
+    "id": "w102",
+    "text": "buffer",
+    "start": 42.8,
+    "end": 43.36
+  },
+  {
+    "id": "w103",
+    "text": "compartilhado.",
+    "start": 43.36,
+    "end": 44.4
+  },
+  {
+    "id": "w104",
+    "text": "O",
+    "start": 44.4,
+    "end": 44.56
+  },
+  {
+    "id": "w105",
+    "text": "pior",
+    "start": 44.56,
+    "end": 44.96
+  },
+  {
+    "id": "w106",
+    "text": "caso",
+    "start": 44.96,
+    "end": 45.28
+  },
+  {
+    "id": "w107",
+    "text": "caiu",
+    "start": 45.36,
+    "end": 45.76
+  },
+  {
+    "id": "w108",
+    "text": "de",
+    "start": 45.76,
+    "end": 45.92
+  },
+  {
+    "id": "w109",
+    "text": "4,4",
+    "start": 45.92,
+    "end": 46.88
+  },
+  {
+    "id": "w110",
+    "text": "segundos",
+    "start": 46.88,
+    "end": 47.36
+  },
+  {
+    "id": "w111",
+    "text": "para",
+    "start": 47.52,
+    "end": 47.84
+  },
+  {
+    "id": "w112",
+    "text": "0,1.",
+    "start": 47.84,
+    "end": 49.6
+  },
+  {
+    "id": "w113",
+    "text": "Se",
+    "start": 49.92,
+    "end": 50.08
+  },
+  {
+    "id": "w114",
+    "text": "a",
+    "start": 50.24,
+    "end": 50.4
+  },
+  {
+    "id": "w115",
+    "text": "internet",
+    "start": 50.4,
+    "end": 50.64
+  },
+  {
+    "id": "w116",
+    "text": "cair,",
+    "start": 50.88,
+    "end": 51.44
+  },
+  {
+    "id": "w117",
+    "text": "a",
+    "start": 51.44,
+    "end": 51.6
+  },
+  {
+    "id": "w118",
+    "text": "fila",
+    "start": 51.6,
+    "end": 52
+  },
+  {
+    "id": "w119",
+    "text": "continua",
+    "start": 52,
+    "end": 52.48
+  },
+  {
+    "id": "w120",
+    "text": "funcionando",
+    "start": 52.48,
+    "end": 52.96
+  },
+  {
+    "id": "w121",
+    "text": "e",
+    "start": 53.04,
+    "end": 53.2
+  },
+  {
+    "id": "w122",
+    "text": "os",
+    "start": 53.2,
+    "end": 53.36
+  },
+  {
+    "id": "w123",
+    "text": "eventos",
+    "start": 53.36,
+    "end": 53.76
+  },
+  {
+    "id": "w124",
+    "text": "são",
+    "start": 53.76,
+    "end": 53.92
+  },
+  {
+    "id": "w125",
+    "text": "enviados",
+    "start": 53.92,
+    "end": 54.48
+  },
+  {
+    "id": "w126",
+    "text": "quando",
+    "start": 54.48,
+    "end": 54.64
+  },
+  {
+    "id": "w127",
+    "text": "a",
+    "start": 54.64,
+    "end": 54.72
+  },
+  {
+    "id": "w128",
+    "text": "conexão",
+    "start": 54.72,
+    "end": 55.28
+  },
+  {
+    "id": "w129",
+    "text": "volta.",
+    "start": 55.28,
+    "end": 56.56
+  }
+]

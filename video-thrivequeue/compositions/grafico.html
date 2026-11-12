@@ -1,0 +1,61 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "Inter", sans-serif;
+    }
+    #gr-veu {
+      position: absolute;
+      inset: 0;
+      background: rgba(4, 20, 15, 0.74);
+    }
+    #gr-cartao {
+      position: absolute;
+      left: 210px;
+      top: 150px;
+      width: 1500px;
+      padding: 40px 30px 30px;
+      border-radius: 24px;
+      background: #ffffff;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4);
+    }
+    #gr-titulo {
+      padding: 0 20px;
+      font-size: 46px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #0b2e24;
+    }
+    #gr-img {
+      display: block;
+      width: 1440px;
+      height: 589px;
+      margin-top: 16px;
+    }
+    #gr-legenda {
+      padding: 0 20px;
+      margin-top: 8px;
+      font-size: 28px;
+      color: #4b6358;
+    }
+  </style>
+  <div id="root" data-composition-id="grafico" data-width="1920" data-height="1080">
+    <div id="gr-cena" class="clip" data-start="0" data-duration="5.9" data-track-index="0">
+      <div id="gr-veu"></div>
+      <div id="gr-cartao">
+        <div id="gr-titulo">Quanto maior a fila, maior a vantagem da IA</div>
+        <img id="gr-img" src="assets/comparacao_previsao.png" alt="" />
+        <div id="gr-legenda">Erro médio por tamanho da fila nos dias de teste · dados simulados</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#gr-veu", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power1.out" }, 0);
+    tl.fromTo("#gr-cartao", { opacity: 0, y: 40, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 0.1);
+    tl.fromTo("#gr-cartao", { opacity: 1 }, { opacity: 0, y: -16, duration: 0.35, ease: "power2.in", immediateRender: false }, 5.45);
+    tl.fromTo("#gr-veu", { opacity: 1 }, { opacity: 0, duration: 0.35, ease: "power1.in", immediateRender: false }, 5.5);
+    window.__timelines["grafico"] = tl;
+  </script>
+</template>

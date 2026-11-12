@@ -1,6 +1,6 @@
 # SPEC — Computer Organization and Architecture | GS 2026.2 · Citizen Assist AI
 
-**Sistema Inteligente de Gerenciamento de Filas Virtuais**
+**ThriveQueue — Sistema Inteligente de Gerenciamento de Filas Virtuais**
 
 **Integrantes:** Rafael Marinucci Peres (RM: 569729) · David dos Reis Cardoso (RM: 568938)
 **Turma:** 1CC-FEV · **Modalidade:** Protótipo + relatório técnico

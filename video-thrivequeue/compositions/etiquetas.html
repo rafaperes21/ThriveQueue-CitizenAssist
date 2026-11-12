@@ -1,0 +1,108 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "Inter", sans-serif;
+    }
+    #root .etq {
+      position: absolute;
+      left: 192px;
+      bottom: 120px;
+    }
+    #root .cartao {
+      display: flex;
+      align-items: stretch;
+      border-radius: 18px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.97);
+      box-shadow: 0 16px 48px rgba(4, 20, 15, 0.35);
+    }
+    #root .aba {
+      width: 14px;
+      background: #047857;
+      flex-shrink: 0;
+    }
+    #root .aba.solar {
+      background: #f59e0b;
+    }
+    #root .corpo {
+      padding: 22px 44px 24px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    #root .kicker {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #0e7490;
+      white-space: nowrap;
+    }
+    #root .titulo {
+      font-size: 50px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #0b2e24;
+      white-space: nowrap;
+    }
+    #root .titulo.menor {
+      font-size: 36px;
+      font-weight: 700;
+    }
+  </style>
+  <div id="root" data-composition-id="etiquetas" data-width="1920" data-height="1080">
+    <div id="et1" class="clip etq" data-start="4.6" data-duration="4.5" data-track-index="0">
+      <div class="cartao"><div class="aba"></div><div class="corpo"><div class="kicker">ABERTURA</div><div class="titulo">O problema</div></div></div>
+    </div>
+    <div id="et2" class="clip etq" data-start="34.4" data-duration="4.5" data-track-index="1">
+      <div class="cartao"><div class="aba"></div><div class="corpo"><div class="kicker">ETAPA 1</div><div class="titulo">Arquitetura do sistema</div></div></div>
+    </div>
+    <div id="et3" class="clip etq" data-start="94" data-duration="4.5" data-track-index="2">
+      <div class="cartao"><div class="aba"></div><div class="corpo"><div class="kicker">ETAPAS 2 E 4 · TESTE 1</div><div class="titulo">Chegada de cidadãos</div></div></div>
+    </div>
+    <div id="et4" class="clip etq" data-start="118.6" data-duration="4.5" data-track-index="3">
+      <div class="cartao"><div class="aba"></div><div class="corpo"><div class="kicker">TESTE 2</div><div class="titulo">Conclusão de atendimentos</div></div></div>
+    </div>
+    <div id="et5" class="clip etq" data-start="133.4" data-duration="4.5" data-track-index="0">
+      <div class="cartao"><div class="aba"></div><div class="corpo"><div class="kicker">TESTE 3</div><div class="titulo">Saída com a fila vazia</div></div></div>
+    </div>
+    <div id="et12" class="clip etq" data-start="147.6" data-duration="4" data-track-index="3">
+      <div class="cartao"><div class="aba solar"></div><div class="corpo"><div class="kicker">REPLAY DO TESTE 3 · 0,5×</div><div class="titulo">LED vermelho e “FILA VAZIA!”</div></div></div>
+    </div>
+    <div id="et6" class="clip etq" data-start="160.1" data-duration="4.5" data-track-index="1">
+      <div class="cartao"><div class="aba"></div><div class="corpo"><div class="kicker">TESTE 4</div><div class="titulo">Atualização da estimativa</div></div></div>
+    </div>
+    <div id="et7" class="clip etq" data-start="166.3" data-duration="8.1" data-track-index="2">
+      <div class="cartao"><div class="aba solar"></div><div class="corpo"><div class="kicker">REPLAY DO TESTE 1 · 1,5×</div><div class="titulo">A estimativa muda a cada chegada</div></div></div>
+    </div>
+    <div id="et8" class="clip etq" data-start="176.6" data-duration="4.5" data-track-index="3">
+      <div class="cartao"><div class="aba"></div><div class="corpo"><div class="kicker">ETAPA 3</div><div class="titulo">Previsão de espera com IA</div></div></div>
+    </div>
+    <div id="et9" class="clip etq" data-start="213" data-duration="4.5" data-track-index="0">
+      <div class="cartao"><div class="aba"></div><div class="corpo"><div class="kicker">ETAPA 5</div><div class="titulo">Análise da arquitetura</div></div></div>
+    </div>
+    <div id="et10" class="clip etq" data-start="264.9" data-duration="4.5" data-track-index="1">
+      <div class="cartao"><div class="aba"></div><div class="corpo"><div class="kicker">ENCERRAMENTO</div><div class="titulo">ThriveQueue</div></div></div>
+    </div>
+    <div id="et11" class="clip etq" data-start="271" data-duration="6.8" data-track-index="2">
+      <div class="cartao"><div class="aba solar"></div><div class="corpo"><div class="kicker">AVISO</div><div class="titulo menor">Protótipo acadêmico · não é canal oficial · nenhum dado pessoal</div></div></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // cada etiqueta: o cartao entra por recorte, o texto sobe, e sai no fim da sua janela
+    document.querySelectorAll("#root .etq").forEach((el) => {
+      const ini = parseFloat(el.dataset.start);
+      const fim = ini + parseFloat(el.dataset.duration);
+      const cartao = el.querySelector(".cartao");
+      const aba = el.querySelector(".aba");
+      const textos = el.querySelectorAll(".kicker, .titulo");
+      tl.fromTo(cartao, { clipPath: "inset(0 100% 0 0)", y: 0, opacity: 1 }, { clipPath: "inset(0 0% 0 0)", duration: 0.55, ease: "power3.out" }, ini + 0.05);
+      tl.fromTo(aba, { scaleY: 0, transformOrigin: "50% 0%" }, { scaleY: 1, duration: 0.45, ease: "power2.out" }, ini + 0.2);
+      tl.fromTo(textos, { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out", stagger: 0.1 }, ini + 0.25);
+      tl.fromTo(cartao, { y: 0, opacity: 1 }, { y: 18, opacity: 0, duration: 0.35, ease: "power2.in", immediateRender: false }, fim - 0.45);
+    });
+    window.__timelines["etiquetas"] = tl;
+  </script>
+</template>

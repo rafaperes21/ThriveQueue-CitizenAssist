@@ -1,0 +1,542 @@
+[
+  {
+    "id": "w0",
+    "text": "Para",
+    "start": 1.6,
+    "end": 1.92
+  },
+  {
+    "id": "w1",
+    "text": "a",
+    "start": 1.92,
+    "end": 2
+  },
+  {
+    "id": "w2",
+    "text": "previsão,",
+    "start": 2,
+    "end": 2.72
+  },
+  {
+    "id": "w3",
+    "text": "comparamos",
+    "start": 2.72,
+    "end": 3.36
+  },
+  {
+    "id": "w4",
+    "text": "dois",
+    "start": 3.36,
+    "end": 3.6
+  },
+  {
+    "id": "w5",
+    "text": "métodos.",
+    "start": 3.6,
+    "end": 4.32
+  },
+  {
+    "id": "w6",
+    "text": "O",
+    "start": 4.32,
+    "end": 4.56
+  },
+  {
+    "id": "w7",
+    "text": "convencional",
+    "start": 4.56,
+    "end": 5.28
+  },
+  {
+    "id": "w8",
+    "text": "multiplica",
+    "start": 5.44,
+    "end": 6.08
+  },
+  {
+    "id": "w9",
+    "text": "as",
+    "start": 6.08,
+    "end": 6.16
+  },
+  {
+    "id": "w10",
+    "text": "pessoas",
+    "start": 6.16,
+    "end": 6.48
+  },
+  {
+    "id": "w11",
+    "text": "na",
+    "start": 6.48,
+    "end": 6.64
+  },
+  {
+    "id": "w12",
+    "text": "fila",
+    "start": 6.64,
+    "end": 7.04
+  },
+  {
+    "id": "w13",
+    "text": "pela",
+    "start": 7.04,
+    "end": 7.28
+  },
+  {
+    "id": "w14",
+    "text": "duração",
+    "start": 7.28,
+    "end": 7.76
+  },
+  {
+    "id": "w15",
+    "text": "média",
+    "start": 7.76,
+    "end": 8.16
+  },
+  {
+    "id": "w16",
+    "text": "de",
+    "start": 8.16,
+    "end": 8.24
+  },
+  {
+    "id": "w17",
+    "text": "um",
+    "start": 8.24,
+    "end": 8.4
+  },
+  {
+    "id": "w18",
+    "text": "atendimento.",
+    "start": 8.4,
+    "end": 9.28
+  },
+  {
+    "id": "w19",
+    "text": "O",
+    "start": 9.92,
+    "end": 10.08
+  },
+  {
+    "id": "w20",
+    "text": "de",
+    "start": 10.08,
+    "end": 10.32
+  },
+  {
+    "id": "w21",
+    "text": "A",
+    "start": 10.32,
+    "end": 10.48
+  },
+  {
+    "id": "w22",
+    "text": "é",
+    "start": 10.72,
+    "end": 10.88
+  },
+  {
+    "id": "w23",
+    "text": "uma",
+    "start": 10.88,
+    "end": 11.04
+  },
+  {
+    "id": "w24",
+    "text": "regressão",
+    "start": 11.04,
+    "end": 11.52
+  },
+  {
+    "id": "w25",
+    "text": "linear",
+    "start": 11.52,
+    "end": 12
+  },
+  {
+    "id": "w26",
+    "text": "que",
+    "start": 12,
+    "end": 12.24
+  },
+  {
+    "id": "w27",
+    "text": "também",
+    "start": 12.24,
+    "end": 12.48
+  },
+  {
+    "id": "w28",
+    "text": "considera",
+    "start": 12.48,
+    "end": 12.96
+  },
+  {
+    "id": "w29",
+    "text": "a",
+    "start": 12.96,
+    "end": 13.04
+  },
+  {
+    "id": "w30",
+    "text": "duração",
+    "start": 13.04,
+    "end": 13.44
+  },
+  {
+    "id": "w31",
+    "text": "dos",
+    "start": 13.44,
+    "end": 13.6
+  },
+  {
+    "id": "w32",
+    "text": "últimos",
+    "start": 13.6,
+    "end": 14.08
+  },
+  {
+    "id": "w33",
+    "text": "atendimentos",
+    "start": 14.08,
+    "end": 14.72
+  },
+  {
+    "id": "w34",
+    "text": "e",
+    "start": 14.72,
+    "end": 14.88
+  },
+  {
+    "id": "w35",
+    "text": "o",
+    "start": 14.88,
+    "end": 14.96
+  },
+  {
+    "id": "w36",
+    "text": "horário.",
+    "start": 14.96,
+    "end": 15.68
+  },
+  {
+    "id": "w37",
+    "text": "Treinamos",
+    "start": 15.68,
+    "end": 16.32
+  },
+  {
+    "id": "w38",
+    "text": "com",
+    "start": 16.32,
+    "end": 16.48
+  },
+  {
+    "id": "w39",
+    "text": "um",
+    "start": 16.48,
+    "end": 16.64
+  },
+  {
+    "id": "w40",
+    "text": "histórico",
+    "start": 16.64,
+    "end": 17.12
+  },
+  {
+    "id": "w41",
+    "text": "simulado",
+    "start": 17.12,
+    "end": 17.68
+  },
+  {
+    "id": "w42",
+    "text": "de",
+    "start": 17.68,
+    "end": 17.84
+  },
+  {
+    "id": "w43",
+    "text": "quase",
+    "start": 17.84,
+    "end": 18.08
+  },
+  {
+    "id": "w44",
+    "text": "2",
+    "start": 18.08,
+    "end": 18.32
+  },
+  {
+    "id": "w45",
+    "text": "mil",
+    "start": 18.32,
+    "end": 18.48
+  },
+  {
+    "id": "w46",
+    "text": "atendimentos.",
+    "start": 18.64,
+    "end": 19.44
+  },
+  {
+    "id": "w47",
+    "text": "E",
+    "start": 19.44,
+    "end": 19.68
+  },
+  {
+    "id": "w48",
+    "text": "testamos",
+    "start": 19.68,
+    "end": 20.16
+  },
+  {
+    "id": "w49",
+    "text": "em",
+    "start": 20.16,
+    "end": 20.32
+  },
+  {
+    "id": "w50",
+    "text": "dias",
+    "start": 20.32,
+    "end": 20.64
+  },
+  {
+    "id": "w51",
+    "text": "que",
+    "start": 20.64,
+    "end": 20.8
+  },
+  {
+    "id": "w52",
+    "text": "o",
+    "start": 20.8,
+    "end": 20.88
+  },
+  {
+    "id": "w53",
+    "text": "modelo",
+    "start": 20.88,
+    "end": 21.28
+  },
+  {
+    "id": "w54",
+    "text": "nunca",
+    "start": 21.28,
+    "end": 21.52
+  },
+  {
+    "id": "w55",
+    "text": "viu.",
+    "start": 21.52,
+    "end": 22.32
+  },
+  {
+    "id": "w56",
+    "text": "regressão.",
+    "start": 22.36,
+    "end": 23.8
+  },
+  {
+    "id": "w57",
+    "text": "A",
+    "start": 23.36,
+    "end": 23.52
+  },
+  {
+    "id": "w58",
+    "text": "regressão",
+    "start": 23.52,
+    "end": 24.08
+  },
+  {
+    "id": "w59",
+    "text": "errou",
+    "start": 24.08,
+    "end": 24.4
+  },
+  {
+    "id": "w60",
+    "text": "em",
+    "start": 24.48,
+    "end": 24.56
+  },
+  {
+    "id": "w61",
+    "text": "média",
+    "start": 24.56,
+    "end": 24.88
+  },
+  {
+    "id": "w62",
+    "text": "2,1",
+    "start": 24.96,
+    "end": 25.68
+  },
+  {
+    "id": "w63",
+    "text": "minutos",
+    "start": 25.68,
+    "end": 26.08
+  },
+  {
+    "id": "w64",
+    "text": "contra",
+    "start": 26.24,
+    "end": 26.4
+  },
+  {
+    "id": "w65",
+    "text": "2,85",
+    "start": 26.56,
+    "end": 27.68
+  },
+  {
+    "id": "w66",
+    "text": "minutos",
+    "start": 27.76,
+    "end": 27.84
+  },
+  {
+    "id": "w67",
+    "text": "de",
+    "start": 27.84,
+    "end": 28
+  },
+  {
+    "id": "w68",
+    "text": "média.",
+    "start": 28,
+    "end": 28.56
+  },
+  {
+    "id": "w69",
+    "text": "Ou",
+    "start": 28.56,
+    "end": 28.72
+  },
+  {
+    "id": "w70",
+    "text": "seja,",
+    "start": 28.72,
+    "end": 29.04
+  },
+  {
+    "id": "w71",
+    "text": "26%",
+    "start": 29.04,
+    "end": 30
+  },
+  {
+    "id": "w72",
+    "text": "a",
+    "start": 30.16,
+    "end": 30.32
+  },
+  {
+    "id": "w73",
+    "text": "menos.",
+    "start": 30.32,
+    "end": 30.96
+  },
+  {
+    "id": "w74",
+    "text": "E",
+    "start": 30.96,
+    "end": 31.12
+  },
+  {
+    "id": "w75",
+    "text": "a",
+    "start": 31.28,
+    "end": 31.36
+  },
+  {
+    "id": "w76",
+    "text": "vantagem",
+    "start": 31.36,
+    "end": 31.92
+  },
+  {
+    "id": "w77",
+    "text": "aumenta",
+    "start": 31.92,
+    "end": 32.4
+  },
+  {
+    "id": "w78",
+    "text": "quando",
+    "start": 32.4,
+    "end": 32.56
+  },
+  {
+    "id": "w79",
+    "text": "a",
+    "start": 32.56,
+    "end": 32.72
+  },
+  {
+    "id": "w80",
+    "text": "fila",
+    "start": 32.72,
+    "end": 33.04
+  },
+  {
+    "id": "w81",
+    "text": "está",
+    "start": 33.04,
+    "end": 33.28
+  },
+  {
+    "id": "w82",
+    "text": "maior,",
+    "start": 33.28,
+    "end": 33.6
+  },
+  {
+    "id": "w83",
+    "text": "que",
+    "start": 33.68,
+    "end": 33.84
+  },
+  {
+    "id": "w84",
+    "text": "é",
+    "start": 33.92,
+    "end": 34.08
+  },
+  {
+    "id": "w85",
+    "text": "quando",
+    "start": 34.08,
+    "end": 34.32
+  },
+  {
+    "id": "w86",
+    "text": "a",
+    "start": 34.32,
+    "end": 34.48
+  },
+  {
+    "id": "w87",
+    "text": "informação",
+    "start": 34.48,
+    "end": 35.04
+  },
+  {
+    "id": "w88",
+    "text": "mais",
+    "start": 35.04,
+    "end": 35.36
+  },
+  {
+    "id": "w89",
+    "text": "importa.",
+    "start": 35.36,
+    "end": 37.2
+  }
+]

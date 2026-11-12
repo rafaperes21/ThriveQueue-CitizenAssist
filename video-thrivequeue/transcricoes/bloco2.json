@@ -1,0 +1,782 @@
+[
+  {
+    "id": "w0",
+    "text": "What's",
+    "start": 5.98,
+    "end": 6.3
+  },
+  {
+    "id": "w1",
+    "text": "O",
+    "start": 6.08,
+    "end": 6.4
+  },
+  {
+    "id": "w2",
+    "text": "cérebro",
+    "start": 6.4,
+    "end": 7.04
+  },
+  {
+    "id": "w3",
+    "text": "é",
+    "start": 7.2,
+    "end": 7.36
+  },
+  {
+    "id": "w4",
+    "text": "um",
+    "start": 7.36,
+    "end": 7.6
+  },
+  {
+    "id": "w5",
+    "text": "F32",
+    "start": 7.6,
+    "end": 8.48
+  },
+  {
+    "id": "w6",
+    "text": "simulado",
+    "start": 8.56,
+    "end": 9.04
+  },
+  {
+    "id": "w7",
+    "text": "no",
+    "start": 9.04,
+    "end": 9.12
+  },
+  {
+    "id": "w8",
+    "text": "Walkway,",
+    "start": 9.2,
+    "end": 10.08
+  },
+  {
+    "id": "w9",
+    "text": "com",
+    "start": 10.08,
+    "end": 10.24
+  },
+  {
+    "id": "w10",
+    "text": "um",
+    "start": 10.24,
+    "end": 10.4
+  },
+  {
+    "id": "w11",
+    "text": "processador",
+    "start": 10.4,
+    "end": 10.96
+  },
+  {
+    "id": "w12",
+    "text": "extensa",
+    "start": 11.12,
+    "end": 11.76
+  },
+  {
+    "id": "w13",
+    "text": "de",
+    "start": 11.76,
+    "end": 11.92
+  },
+  {
+    "id": "w14",
+    "text": "dois",
+    "start": 11.92,
+    "end": 12
+  },
+  {
+    "id": "w15",
+    "text": "núcleos",
+    "start": 12.08,
+    "end": 12.56
+  },
+  {
+    "id": "w16",
+    "text": "a",
+    "start": 12.56,
+    "end": 12.72
+  },
+  {
+    "id": "w17",
+    "text": "240",
+    "start": 12.72,
+    "end": 13.44
+  },
+  {
+    "id": "w18",
+    "text": "MHz.",
+    "start": 13.44,
+    "end": 14.24
+  },
+  {
+    "id": "w19",
+    "text": "A",
+    "start": 14.4,
+    "end": 14.56
+  },
+  {
+    "id": "w20",
+    "text": "esquerda",
+    "start": 14.64,
+    "end": 15.2
+  },
+  {
+    "id": "w21",
+    "text": "estão",
+    "start": 15.2,
+    "end": 15.44
+  },
+  {
+    "id": "w22",
+    "text": "as",
+    "start": 15.44,
+    "end": 15.68
+  },
+  {
+    "id": "w23",
+    "text": "entradas.",
+    "start": 15.68,
+    "end": 16.4
+  },
+  {
+    "id": "w24",
+    "text": "Dois",
+    "start": 16.4,
+    "end": 16.72
+  },
+  {
+    "id": "w25",
+    "text": "botões,",
+    "start": 16.72,
+    "end": 17.52
+  },
+  {
+    "id": "w26",
+    "text": "um",
+    "start": 17.52,
+    "end": 17.76
+  },
+  {
+    "id": "w27",
+    "text": "de",
+    "start": 17.76,
+    "end": 17.92
+  },
+  {
+    "id": "w28",
+    "text": "chegada",
+    "start": 17.92,
+    "end": 18.4
+  },
+  {
+    "id": "w29",
+    "text": "e",
+    "start": 18.4,
+    "end": 18.56
+  },
+  {
+    "id": "w30",
+    "text": "um",
+    "start": 18.56,
+    "end": 18.8
+  },
+  {
+    "id": "w31",
+    "text": "de",
+    "start": 18.8,
+    "end": 18.96
+  },
+  {
+    "id": "w32",
+    "text": "atendimento",
+    "start": 18.96,
+    "end": 19.6
+  },
+  {
+    "id": "w33",
+    "text": "concluído.",
+    "start": 19.6,
+    "end": 20.32
+  },
+  {
+    "id": "w34",
+    "text": "Ligados",
+    "start": 20.32,
+    "end": 20.88
+  },
+  {
+    "id": "w35",
+    "text": "a",
+    "start": 20.88,
+    "end": 21.04
+  },
+  {
+    "id": "w36",
+    "text": "um",
+    "start": 21.04,
+    "end": 21.2
+  },
+  {
+    "id": "w37",
+    "text": "GPI,",
+    "start": 21.2,
+    "end": 21.92
+  },
+  {
+    "id": "w38",
+    "text": "O",
+    "start": 21.92,
+    "end": 22.24
+  },
+  {
+    "id": "w39",
+    "text": "com",
+    "start": 22.4,
+    "end": 22.56
+  },
+  {
+    "id": "w40",
+    "text": "pull",
+    "start": 22.64,
+    "end": 22.88
+  },
+  {
+    "id": "w41",
+    "text": "up",
+    "start": 23.04,
+    "end": 23.2
+  },
+  {
+    "id": "w42",
+    "text": "interno.",
+    "start": 23.36,
+    "end": 24.08
+  },
+  {
+    "id": "w43",
+    "text": "A",
+    "start": 24.08,
+    "end": 24.24
+  },
+  {
+    "id": "w44",
+    "text": "direita,",
+    "start": 24.32,
+    "end": 24.88
+  },
+  {
+    "id": "w45",
+    "text": "as",
+    "start": 25.04,
+    "end": 25.2
+  },
+  {
+    "id": "w46",
+    "text": "saídas.",
+    "start": 25.28,
+    "end": 26.16
+  },
+  {
+    "id": "w47",
+    "text": "Um",
+    "start": 26.16,
+    "end": 26.32
+  },
+  {
+    "id": "w48",
+    "text": "LCD",
+    "start": 26.48,
+    "end": 27.04
+  },
+  {
+    "id": "w49",
+    "text": "pelo",
+    "start": 27.04,
+    "end": 27.28
+  },
+  {
+    "id": "w50",
+    "text": "barramento",
+    "start": 27.28,
+    "end": 27.84
+  },
+  {
+    "id": "w51",
+    "text": "I2C",
+    "start": 27.84,
+    "end": 28.56
+  },
+  {
+    "id": "w52",
+    "text": "e",
+    "start": 28.72,
+    "end": 28.88
+  },
+  {
+    "id": "w53",
+    "text": "dois",
+    "start": 28.88,
+    "end": 29.04
+  },
+  {
+    "id": "w54",
+    "text": "LEDs.",
+    "start": 29.2,
+    "end": 30.08
+  },
+  {
+    "id": "w55",
+    "text": "Verde",
+    "start": 30.08,
+    "end": 30.48
+  },
+  {
+    "id": "w56",
+    "text": "para",
+    "start": 30.64,
+    "end": 30.8
+  },
+  {
+    "id": "w57",
+    "text": "operação",
+    "start": 30.88,
+    "end": 31.28
+  },
+  {
+    "id": "w58",
+    "text": "válida",
+    "start": 31.28,
+    "end": 31.76
+  },
+  {
+    "id": "w59",
+    "text": "e",
+    "start": 31.76,
+    "end": 31.92
+  },
+  {
+    "id": "w60",
+    "text": "vermelho",
+    "start": 31.92,
+    "end": 32.32
+  },
+  {
+    "id": "w61",
+    "text": "para",
+    "start": 32.32,
+    "end": 32.56
+  },
+  {
+    "id": "w62",
+    "text": "inválida.",
+    "start": 32.56,
+    "end": 33.44
+  },
+  {
+    "id": "w63",
+    "text": "Dentro",
+    "start": 33.44,
+    "end": 33.84
+  },
+  {
+    "id": "w64",
+    "text": "do",
+    "start": 33.84,
+    "end": 34.08
+  },
+  {
+    "id": "w65",
+    "text": "chip,",
+    "start": 34.08,
+    "end": 34.56
+  },
+  {
+    "id": "w66",
+    "text": "a",
+    "start": 34.72,
+    "end": 34.96
+  },
+  {
+    "id": "w67",
+    "text": "SRAD",
+    "start": 34.96,
+    "end": 35.68
+  },
+  {
+    "id": "w68",
+    "text": "520",
+    "start": 35.84,
+    "end": 37.04
+  },
+  {
+    "id": "w69",
+    "text": "kilobytes",
+    "start": 37.2,
+    "end": 38.24
+  },
+  {
+    "id": "w70",
+    "text": "guarda",
+    "start": 38.48,
+    "end": 39.12
+  },
+  {
+    "id": "w71",
+    "text": "o",
+    "start": 39.12,
+    "end": 39.44
+  },
+  {
+    "id": "w72",
+    "text": "contador",
+    "start": 39.68,
+    "end": 40.4
+  },
+  {
+    "id": "w73",
+    "text": "e",
+    "start": 40.4,
+    "end": 40.56
+  },
+  {
+    "id": "w74",
+    "text": "um",
+    "start": 40.56,
+    "end": 40.72
+  },
+  {
+    "id": "w75",
+    "text": "buffer",
+    "start": 40.72,
+    "end": 41.28
+  },
+  {
+    "id": "w76",
+    "text": "com",
+    "start": 41.36,
+    "end": 41.6
+  },
+  {
+    "id": "w77",
+    "text": "os",
+    "start": 41.6,
+    "end": 41.76
+  },
+  {
+    "id": "w78",
+    "text": "últimos",
+    "start": 41.76,
+    "end": 42.08
+  },
+  {
+    "id": "w79",
+    "text": "100",
+    "start": 42.08,
+    "end": 42.32
+  },
+  {
+    "id": "w80",
+    "text": "eventos.",
+    "start": 42.4,
+    "end": 43.04
+  },
+  {
+    "id": "w81",
+    "text": "E",
+    "start": 43.04,
+    "end": 43.2
+  },
+  {
+    "id": "w82",
+    "text": "a",
+    "start": 43.2,
+    "end": 43.36
+  },
+  {
+    "id": "w83",
+    "text": "flash",
+    "start": 43.36,
+    "end": 43.84
+  },
+  {
+    "id": "w84",
+    "text": "de",
+    "start": 43.84,
+    "end": 44
+  },
+  {
+    "id": "w85",
+    "text": "4MB",
+    "start": 44,
+    "end": 44.88
+  },
+  {
+    "id": "w86",
+    "text": "guarda",
+    "start": 44.96,
+    "end": 45.44
+  },
+  {
+    "id": "w87",
+    "text": "o",
+    "start": 45.44,
+    "end": 45.52
+  },
+  {
+    "id": "w88",
+    "text": "programa.",
+    "start": 45.52,
+    "end": 46.16
+  },
+  {
+    "id": "w89",
+    "text": "Embaixo.",
+    "start": 46.48,
+    "end": 48.08
+  },
+  {
+    "id": "w90",
+    "text": "A",
+    "start": 48.08,
+    "end": 48.4
+  },
+  {
+    "id": "w91",
+    "text": "comunicação.",
+    "start": 48.4,
+    "end": 49.68
+  },
+  {
+    "id": "w92",
+    "text": "O",
+    "start": 50,
+    "end": 50.32
+  },
+  {
+    "id": "w93",
+    "text": "F32",
+    "start": 50.32,
+    "end": 51.2
+  },
+  {
+    "id": "w94",
+    "text": "usa",
+    "start": 51.28,
+    "end": 51.6
+  },
+  {
+    "id": "w95",
+    "text": "Wi-Fi",
+    "start": 51.68,
+    "end": 52.24
+  },
+  {
+    "id": "w96",
+    "text": "e",
+    "start": 52.24,
+    "end": 52.4
+  },
+  {
+    "id": "w97",
+    "text": "manda",
+    "start": 52.4,
+    "end": 52.72
+  },
+  {
+    "id": "w98",
+    "text": "cada",
+    "start": 52.72,
+    "end": 53.04
+  },
+  {
+    "id": "w99",
+    "text": "evento",
+    "start": 53.04,
+    "end": 53.36
+  },
+  {
+    "id": "w100",
+    "text": "por",
+    "start": 53.76,
+    "end": 54
+  },
+  {
+    "id": "w101",
+    "text": "MKTT",
+    "start": 54,
+    "end": 54.96
+  },
+  {
+    "id": "w102",
+    "text": "para",
+    "start": 54.96,
+    "end": 55.12
+  },
+  {
+    "id": "w103",
+    "text": "um",
+    "start": 55.12,
+    "end": 55.28
+  },
+  {
+    "id": "w104",
+    "text": "broker",
+    "start": 55.28,
+    "end": 55.6
+  },
+  {
+    "id": "w105",
+    "text": "na",
+    "start": 55.76,
+    "end": 55.92
+  },
+  {
+    "id": "w106",
+    "text": "internet.",
+    "start": 55.92,
+    "end": 56.4
+  },
+  {
+    "id": "w107",
+    "text": "O",
+    "start": 56.71,
+    "end": 56.95
+  },
+  {
+    "id": "w108",
+    "text": "backend",
+    "start": 56.95,
+    "end": 57.43
+  },
+  {
+    "id": "w109",
+    "text": "em",
+    "start": 57.67,
+    "end": 57.83
+  },
+  {
+    "id": "w110",
+    "text": "Python",
+    "start": 57.83,
+    "end": 58.31
+  },
+  {
+    "id": "w111",
+    "text": "recebe,",
+    "start": 58.31,
+    "end": 58.87
+  },
+  {
+    "id": "w112",
+    "text": "calcula",
+    "start": 59.03,
+    "end": 59.51
+  },
+  {
+    "id": "w113",
+    "text": "a",
+    "start": 59.51,
+    "end": 59.59
+  },
+  {
+    "id": "w114",
+    "text": "previsão",
+    "start": 59.59,
+    "end": 59.99
+  },
+  {
+    "id": "w115",
+    "text": "de",
+    "start": 59.99,
+    "end": 60.15
+  },
+  {
+    "id": "w116",
+    "text": "espera",
+    "start": 60.15,
+    "end": 60.47
+  },
+  {
+    "id": "w117",
+    "text": "e",
+    "start": 60.55,
+    "end": 60.63
+  },
+  {
+    "id": "w118",
+    "text": "devolve",
+    "start": 60.63,
+    "end": 61.11
+  },
+  {
+    "id": "w119",
+    "text": "para",
+    "start": 61.11,
+    "end": 61.19
+  },
+  {
+    "id": "w120",
+    "text": "o",
+    "start": 61.19,
+    "end": 61.35
+  },
+  {
+    "id": "w121",
+    "text": "LCD.",
+    "start": 61.35,
+    "end": 61.91
+  },
+  {
+    "id": "w122",
+    "text": "E",
+    "start": 61.91,
+    "end": 62.07
+  },
+  {
+    "id": "w123",
+    "text": "o",
+    "start": 62.07,
+    "end": 62.15
+  },
+  {
+    "id": "w124",
+    "text": "Dashboard",
+    "start": 62.15,
+    "end": 62.87
+  },
+  {
+    "id": "w125",
+    "text": "consulta",
+    "start": 62.87,
+    "end": 63.27
+  },
+  {
+    "id": "w126",
+    "text": "o",
+    "start": 63.35,
+    "end": 63.43
+  },
+  {
+    "id": "w127",
+    "text": "backend",
+    "start": 63.43,
+    "end": 63.83
+  },
+  {
+    "id": "w128",
+    "text": "por",
+    "start": 63.99,
+    "end": 64.15
+  },
+  {
+    "id": "w129",
+    "text": "HTTP.",
+    "start": 64.15,
+    "end": 65.51
+  }
+]

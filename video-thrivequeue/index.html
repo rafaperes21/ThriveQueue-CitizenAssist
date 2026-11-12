@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --verde: #047857;
+        --verde-escuro: #065f46;
+        --petroleo: #0e7490;
+        --solar: #f59e0b;
+        --tinta: #0b2e24;
+        --fundo: #f3faf6;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--tinta);
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        font-family: "Inter", sans-serif;
+      }
+      .cam {
+        position: absolute;
+        inset: 0;
+        transform-origin: 50% 50%;
+      }
+      .cam video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1920px;
+        height: 1080px;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="284.4"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- gravacoes: cada video fica dentro de uma "camera" (wrapper) que faz o recorte e os zooms -->
+      <div id="cam1" class="cam" style="z-index: 1" data-layout-allow-overflow>
+        <video id="b1" class="clip" src="assets/bloco1.mp4" data-start="4" data-duration="29.7" data-media-start="2.9" data-track-index="1" data-has-audio="true" data-volume="1" data-fade-in="0.15" data-fade-out="0.2" playsinline></video>
+      </div>
+      <div id="cam2" class="cam" style="z-index: 2" data-layout-allow-overflow>
+        <video id="b2" class="clip" src="assets/bloco2.mp4" data-start="33.7" data-duration="60" data-media-start="6" data-track-index="1" data-has-audio="true" data-volume="1" data-fade-in="0.15" data-fade-out="0.2" playsinline></video>
+      </div>
+      <div id="cam3a" class="cam" style="z-index: 3" data-layout-allow-overflow>
+        <video id="b3a" class="clip" src="assets/bloco3.mp4" data-start="93.7" data-duration="24.3" data-media-start="10.3" data-track-index="1" data-has-audio="true" data-volume="1" data-fade-in="0.15" data-fade-out="0.2" playsinline></video>
+      </div>
+      <div id="cam3b" class="cam" style="z-index: 4" data-layout-allow-overflow>
+        <video id="b3b" class="clip" src="assets/bloco3.mp4" data-start="118" data-duration="58.2" data-media-start="38.9" data-track-index="1" data-has-audio="true" data-volume="1" data-fade-in="0.15" data-fade-out="0.2" playsinline></video>
+      </div>
+      <!-- replay mudo do teste 1 por cima da narracao do teste 4 -->
+      <div id="camR" class="cam" style="z-index: 5" data-layout-allow-overflow>
+        <video id="replay" class="clip" src="assets/bloco3.mp4" data-start="166.1" data-duration="8.5" data-media-start="13.2" data-playback-rate="1.5" data-track-index="2" muted playsinline></video>
+      </div>
+      <!-- replay em camera lenta do "FILA VAZIA!" enquanto a narracao descreve -->
+      <div id="camR2" class="cam" style="z-index: 5" data-layout-allow-overflow>
+        <video id="replay2" class="clip" src="assets/bloco3.mp4" data-start="147.6" data-duration="4" data-media-start="65.7" data-playback-rate="0.5" data-track-index="2" muted playsinline></video>
+      </div>
+      <div id="cam4" class="cam" style="z-index: 6" data-layout-allow-overflow>
+        <video id="b4" class="clip" src="assets/bloco4.mp4" data-start="176.2" data-duration="36.4" data-media-start="1.2" data-track-index="1" data-has-audio="true" data-volume="1" data-fade-in="0.15" data-fade-out="0.2" playsinline></video>
+      </div>
+      <div id="cam5" class="cam" style="z-index: 7" data-layout-allow-overflow>
+        <video id="b5" class="clip" src="assets/bloco5.mp4" data-start="212.6" data-duration="51.9" data-media-start="5.1" data-track-index="1" data-has-audio="true" data-volume="1" data-fade-in="0.15" data-fade-out="0.2" playsinline></video>
+      </div>
+      <div id="cam6" class="cam" style="z-index: 8" data-layout-allow-overflow>
+        <video id="b6" class="clip" src="assets/bloco6.mp4" data-start="264.5" data-duration="13.9" data-media-start="1" data-track-index="1" data-has-audio="true" data-volume="1" data-fade-in="0.15" data-fade-out="0.2" playsinline></video>
+      </div>
+
+      <!-- cenas por cima das gravacoes -->
+      <div id="abertura" data-composition-id="abertura" data-composition-src="compositions/abertura.html" data-start="0" data-duration="4.4" data-track-index="3" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 20"></div>
+      <div id="numero-ia" data-composition-id="numero-ia" data-composition-src="compositions/numero-ia.html" data-start="203.8" data-duration="3.4" data-track-index="4" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 21"></div>
+      <div id="grafico" data-composition-id="grafico" data-composition-src="compositions/grafico.html" data-start="206.6" data-duration="5.9" data-track-index="5" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 22"></div>
+      <div id="antes-depois" data-composition-id="antes-depois" data-composition-src="compositions/antes-depois.html" data-start="236.4" data-duration="20.4" data-track-index="4" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 21"></div>
+      <div id="etiquetas" data-composition-id="etiquetas" data-composition-src="compositions/etiquetas.html" data-start="0" data-duration="284.4" data-track-index="6" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 30"></div>
+      <div id="encerramento" data-composition-id="encerramento" data-composition-src="compositions/encerramento.html" data-start="278" data-duration="6.4" data-track-index="3" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 40"></div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      // camera: um ponto (cx, cy) da gravacao vai para o centro da tela, com escala s
+      const BASE = [960, 575, 1.187]; // recorte que esconde abas do navegador e barra de tarefas
+      const estado = {};
+
+      function pos(cx, cy, s) {
+        return { x: -s * (cx - 960), y: -s * (cy - 540), scale: s };
+      }
+      function inicio(id, cx, cy, s) {
+        estado[id] = pos(cx, cy, s);
+        tl.set("#" + id, estado[id], 0);
+      }
+      function mover(id, t, cx, cy, s, dur, ease) {
+        const p = pos(cx, cy, s);
+        tl.fromTo(
+          "#" + id,
+          { ...estado[id] },
+          { ...p, duration: dur || 0.8, ease: ease || "power2.inOut", immediateRender: false },
+          t,
+        );
+        estado[id] = p;
+      }
+
+      ["cam1", "cam3a", "cam3b", "cam4", "cam5", "cam6"].forEach((id) => inicio(id, ...BASE));
+      inicio("cam2", 986, 544, 1.19);
+      inicio("camR", 1095, 480, 1.6);
+      inicio("camR2", 730, 450, 2.8);
+
+      // bloco 1: o problema
+      mover("cam1", 4.0, 960, 565, 1.24, 21.8, "sine.inOut");
+      mover("cam1", 26.6, 640, 430, 2.1); // "conta a fila"
+      mover("cam1", 29.0, 993, 430, 2.1); // "estima a espera"
+      mover("cam1", 31.0, ...BASE); // "mostra tudo na internet"
+
+      // bloco 2: arquitetura (diagrama)
+      mover("cam2", 34.0, 954, 432, 1.55, 1.0); // ESP32
+      mover("cam2", 42.1, 780, 380, 1.9); // entradas
+      mover("cam2", 51.8, 1190, 420, 1.9); // saidas
+      mover("cam2", 60.9, 955, 500, 1.85); // memoria
+      mover("cam2", 74.0, 980, 620, 1.42); // comunicacao
+      mover("cam2", 89.6, 1220, 730, 2.0); // backend + dashboard
+
+      // bloco 3: testes
+      mover("cam3a", 97.7, 725, 470, 2.2); // circuito (cliques)
+      mover("cam3a", 110.5, 1415, 450, 1.9); // dashboard
+      mover("cam3a", 115.3, 1435, 760, 2.0); // lista de eventos
+      mover("cam3b", 120.9, 725, 470, 2.2);
+      mover("cam3b", 126.4, 1415, 450, 1.9);
+      mover("cam3b", 133.6, 725, 470, 2.2);
+      mover("cam3b", 143.8, 730, 450, 2.8); // LCD "FILA VAZIA" + LED vermelho (acontece em 145,0)
+      mover("cam3b", 151.6, 1435, 760, 2.0); // saida invalida no dashboard
+      mover("cam3b", 160.4, ...BASE);
+
+      // bloco 4: previsao
+      mover("cam4", 179.4, 1256, 480, 2.3); // como a espera e calculada
+      mover("cam4", 194.5, 1256, 660, 2.2); // erro medio e tabela
+      mover("cam4", 203.6, ...BASE);
+
+      // bloco 5: analise (linhas do comando s)
+      mover("cam5", 213.2, 1250, 850, 2.4);
+      mover("cam5", 257.7, ...BASE);
+
+      // bloco 6: encerramento
+      mover("cam6", 264.5, 960, 560, 1.25, 13.9, "sine.inOut");
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

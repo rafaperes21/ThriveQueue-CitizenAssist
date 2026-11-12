@@ -1,0 +1,57 @@
+== bloco1 (fala 3.26s a 32.14s)
+  [  3.26-  8.94] Oi, boa noite. Hoje eu vou mostrar para vocês o nosso projeto de Computer
+  [  8.94- 15.10] Organization and Architecture da Global Solution. Ele é um sistema de fila virtual para
+  [ 15.10- 21.18] CitySen SCCI. A ideia é simples. Quem chega num posto de atendimento não sabe
+  [ 21.18- 26.22] quantas pessoas estão na frente e nem quanto vai esperar. O nosso sistema conta
+  [ 26.30- 32.14] fila com botões, Shima espera com inteligência artificial e mostra tudo na internet.
+== bloco2 (fala 5.98s a 65.51s)
+  [  5.98- 11.92] What's O cérebro é um F32 simulado no Walkway, com um processador extensa de
+  [ 11.92- 17.92] dois núcleos a 240 MHz. A esquerda estão as entradas. Dois botões, um de
+  [ 17.92- 23.20] chegada e um de atendimento concluído. Ligados a um GPI, O com pull up
+  [ 23.36- 30.48] interno. A direita, as saídas. Um LCD pelo barramento I2C e dois LEDs. Verde
+  [ 30.64- 38.24] para operação válida e vermelho para inválida. Dentro do chip, a SRAD 520 kilobytes
+  [ 38.48- 43.84] guarda o contador e um buffer com os últimos 100 eventos. E a flash
+  [ 43.84- 52.72] de 4MB guarda o programa. Embaixo. A comunicação. O F32 usa Wi-Fi e manda
+  [ 52.72- 58.87] cada evento por MKTT para um broker na internet. O backend em Python recebe,
+  [ 59.03- 63.27] calcula a previsão de espera e devolve para o LCD. E o Dashboard consulta
+  [ 63.35- 65.51] o backend por HTTP.
+== bloco3 (fala 10.72s a 96.75s)
+  [ 10.72- 16.16] Agora, começando com o primeiro teste, a chegada de cidadãos. Eu vou apertar o
+  [ 16.16- 18.32] botão de chegada 3 vezes.
+  [ 23.04- 27.28] O LCD mostra fila 3. O LED verde pisca a cada clique e o
+  [ 27.28- 32.96] dashboard atualiza sozinho. Cada evento fica registrado com horário, aqui na lista e no
+  [ 32.96- 34.24] serial.
+  [ 39.28- 47.20] Agora passando para a conclusão de atendimentos. Então, dois cliques no azul. E a
+  [ 47.20- 51.52] fila cai para 1. E os concluídos sobem para dois já.
+  [ 54.32- 59.04] Partindo agora para a conclusão da fila, nós clicamos mais uma vez no azul.
+  [ 59.04- 60.88] Perfeito, então a fila se.
+  [ 61.63- 66.35] Acabou a fila. Então zerou. Agora aperta de novo.
+  [ 67.31- 72.51] A fila não fica negativa. O LED vermelho acende, o LCD avisa fila vazia
+  [ 72.59- 79.39] e o sistema registra uma saída inválida. Que aparece em vermelho no nosso dashboard.
+  [ 80.99- 87.47] Agora, atualização da estimativa. A cada chegada, o backhand
+  [ 88.11- 93.31] recalcula a espera e manda de volta. 6 minutos, 12, 18 minutos. Ela aparece
+  [ 93.31- 96.75] no LCD e no dashboard em menos de um segundo.
+== bloco4 (fala 1.60s a 37.20s)
+  [  1.60-  7.28] Para a previsão, comparamos dois métodos. O convencional multiplica as pessoas na fila pela
+  [  7.28-  9.28] duração média de um atendimento.
+  [  9.92- 14.08] O de A é uma regressão linear que também considera a duração dos últimos
+  [ 14.08- 19.44] atendimentos e o horário. Treinamos com um histórico simulado de quase 2 mil atendimentos.
+  [ 19.44- 24.56] E testamos em dias que o modelo nunca viu. regressão. A regressão errou em
+  [ 24.56- 31.12] média 2,1 minutos contra 2,85 minutos de média. Ou seja, 26% a menos. E
+  [ 31.28- 35.36] a vantagem aumenta quando a fila está maior, que é quando a informação mais
+  [ 35.36- 37.20] importa.
+== bloco5 (fala 5.44s a 56.56s)
+  [  5.44- 10.88] Com o comando S, o próprio FP32 mostra os números para análise. O programa
+  [ 10.88- 16.32] ocupa 963 KB da flash. Sobram mais de 200 KB de hip, e cada
+  [ 16.32- 21.36] evento ocupa só 8 bytes. Quem mais gasta memória é a pilha de rede,
+  [ 21.36- 26.16] não a fila. Medindo o tempo do loop, achamos um problema na primeira versão.
+  [ 26.16- 32.48] Quando o MKTT reconectava, o loop travava por 4,4 segundos. E um clique nesse
+  [ 32.48- 37.12] momento seria perdido. A solução foi usar os dois núcleos. A rede foi para
+  [ 37.12- 41.28] uma tarefa no núcleo 0. E os botões ficaram sozinhos no núcleo 1. Com
+  [ 41.36- 47.84] o mutex protegendo o buffer compartilhado. O pior caso caiu de 4,4 segundos para
+  [ 47.84- 54.48] 0,1. Se a internet cair, a fila continua funcionando e os eventos são enviados
+  [ 54.48- 56.56] quando a conexão volta.
+== bloco6 (fala 1.28s a 14.56s)
+  [  1.28-  6.00] Então, o sistema conta a fila sem erros. Prevê a espera com IA e
+  [  6.08- 10.32] mostra tudo na internet. Lembrando que é só um protótipo acadêmico, não é um
+  [ 10.32- 14.56] canal oficial e não coleta nenhum dado pessoal. Valeu.

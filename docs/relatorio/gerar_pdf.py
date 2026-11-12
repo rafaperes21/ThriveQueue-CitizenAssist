@@ -52,7 +52,7 @@ def main():
 
     html = f"""<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8">
-<title>Relatório Técnico - Fila Virtual</title>
+<title>Relatório Técnico - ThriveQueue</title>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
 <style>{ESTILO}</style></head><body>{corpo}</body></html>"""
 

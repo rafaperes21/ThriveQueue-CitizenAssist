@@ -1,0 +1,974 @@
+[
+  {
+    "id": "w0",
+    "text": "Agora,",
+    "start": 10.72,
+    "end": 11.28
+  },
+  {
+    "id": "w1",
+    "text": "começando",
+    "start": 11.28,
+    "end": 11.84
+  },
+  {
+    "id": "w2",
+    "text": "com",
+    "start": 11.84,
+    "end": 12
+  },
+  {
+    "id": "w3",
+    "text": "o",
+    "start": 12,
+    "end": 12.08
+  },
+  {
+    "id": "w4",
+    "text": "primeiro",
+    "start": 12.08,
+    "end": 12.4
+  },
+  {
+    "id": "w5",
+    "text": "teste,",
+    "start": 12.4,
+    "end": 13.04
+  },
+  {
+    "id": "w6",
+    "text": "a",
+    "start": 13.04,
+    "end": 13.2
+  },
+  {
+    "id": "w7",
+    "text": "chegada",
+    "start": 13.2,
+    "end": 13.68
+  },
+  {
+    "id": "w8",
+    "text": "de",
+    "start": 13.68,
+    "end": 13.84
+  },
+  {
+    "id": "w9",
+    "text": "cidadãos.",
+    "start": 13.84,
+    "end": 14.8
+  },
+  {
+    "id": "w10",
+    "text": "Eu",
+    "start": 14.8,
+    "end": 14.96
+  },
+  {
+    "id": "w11",
+    "text": "vou",
+    "start": 14.96,
+    "end": 15.28
+  },
+  {
+    "id": "w12",
+    "text": "apertar",
+    "start": 15.6,
+    "end": 16.08
+  },
+  {
+    "id": "w13",
+    "text": "o",
+    "start": 16.08,
+    "end": 16.16
+  },
+  {
+    "id": "w14",
+    "text": "botão",
+    "start": 16.16,
+    "end": 16.48
+  },
+  {
+    "id": "w15",
+    "text": "de",
+    "start": 16.48,
+    "end": 16.56
+  },
+  {
+    "id": "w16",
+    "text": "chegada",
+    "start": 16.56,
+    "end": 17.04
+  },
+  {
+    "id": "w17",
+    "text": "3",
+    "start": 17.04,
+    "end": 17.44
+  },
+  {
+    "id": "w18",
+    "text": "vezes.",
+    "start": 17.44,
+    "end": 18.32
+  },
+  {
+    "id": "w19",
+    "text": "O",
+    "start": 23.04,
+    "end": 23.36
+  },
+  {
+    "id": "w20",
+    "text": "LCD",
+    "start": 23.36,
+    "end": 24
+  },
+  {
+    "id": "w21",
+    "text": "mostra",
+    "start": 24,
+    "end": 24.32
+  },
+  {
+    "id": "w22",
+    "text": "fila",
+    "start": 24.4,
+    "end": 24.8
+  },
+  {
+    "id": "w23",
+    "text": "3.",
+    "start": 24.8,
+    "end": 25.12
+  },
+  {
+    "id": "w24",
+    "text": "O",
+    "start": 25.12,
+    "end": 25.28
+  },
+  {
+    "id": "w25",
+    "text": "LED",
+    "start": 25.28,
+    "end": 25.68
+  },
+  {
+    "id": "w26",
+    "text": "verde",
+    "start": 25.76,
+    "end": 26
+  },
+  {
+    "id": "w27",
+    "text": "pisca",
+    "start": 26,
+    "end": 26.4
+  },
+  {
+    "id": "w28",
+    "text": "a",
+    "start": 26.56,
+    "end": 26.64
+  },
+  {
+    "id": "w29",
+    "text": "cada",
+    "start": 26.64,
+    "end": 26.8
+  },
+  {
+    "id": "w30",
+    "text": "clique",
+    "start": 26.8,
+    "end": 27.04
+  },
+  {
+    "id": "w31",
+    "text": "e",
+    "start": 27.04,
+    "end": 27.12
+  },
+  {
+    "id": "w32",
+    "text": "o",
+    "start": 27.2,
+    "end": 27.28
+  },
+  {
+    "id": "w33",
+    "text": "dashboard",
+    "start": 27.28,
+    "end": 27.84
+  },
+  {
+    "id": "w34",
+    "text": "atualiza",
+    "start": 27.84,
+    "end": 28.16
+  },
+  {
+    "id": "w35",
+    "text": "sozinho.",
+    "start": 28.4,
+    "end": 29.2
+  },
+  {
+    "id": "w36",
+    "text": "Cada",
+    "start": 29.2,
+    "end": 29.52
+  },
+  {
+    "id": "w37",
+    "text": "evento",
+    "start": 29.52,
+    "end": 29.84
+  },
+  {
+    "id": "w38",
+    "text": "fica",
+    "start": 30,
+    "end": 30.24
+  },
+  {
+    "id": "w39",
+    "text": "registrado",
+    "start": 30.32,
+    "end": 30.8
+  },
+  {
+    "id": "w40",
+    "text": "com",
+    "start": 30.8,
+    "end": 30.96
+  },
+  {
+    "id": "w41",
+    "text": "horário,",
+    "start": 31.04,
+    "end": 31.6
+  },
+  {
+    "id": "w42",
+    "text": "aqui",
+    "start": 31.6,
+    "end": 31.76
+  },
+  {
+    "id": "w43",
+    "text": "na",
+    "start": 31.84,
+    "end": 32
+  },
+  {
+    "id": "w44",
+    "text": "lista",
+    "start": 32.08,
+    "end": 32.4
+  },
+  {
+    "id": "w45",
+    "text": "e",
+    "start": 32.48,
+    "end": 32.72
+  },
+  {
+    "id": "w46",
+    "text": "no",
+    "start": 32.72,
+    "end": 32.96
+  },
+  {
+    "id": "w47",
+    "text": "serial.",
+    "start": 32.96,
+    "end": 34.24
+  },
+  {
+    "id": "w48",
+    "text": "Agora",
+    "start": 39.28,
+    "end": 39.68
+  },
+  {
+    "id": "w49",
+    "text": "passando",
+    "start": 39.84,
+    "end": 40.32
+  },
+  {
+    "id": "w50",
+    "text": "para",
+    "start": 40.32,
+    "end": 40.56
+  },
+  {
+    "id": "w51",
+    "text": "a",
+    "start": 40.56,
+    "end": 40.64
+  },
+  {
+    "id": "w52",
+    "text": "conclusão",
+    "start": 40.64,
+    "end": 41.12
+  },
+  {
+    "id": "w53",
+    "text": "de",
+    "start": 41.12,
+    "end": 41.28
+  },
+  {
+    "id": "w54",
+    "text": "atendimentos.",
+    "start": 41.28,
+    "end": 42.32
+  },
+  {
+    "id": "w55",
+    "text": "Então,",
+    "start": 42.32,
+    "end": 42.72
+  },
+  {
+    "id": "w56",
+    "text": "dois",
+    "start": 42.72,
+    "end": 42.88
+  },
+  {
+    "id": "w57",
+    "text": "cliques",
+    "start": 43.04,
+    "end": 43.44
+  },
+  {
+    "id": "w58",
+    "text": "no",
+    "start": 43.44,
+    "end": 43.68
+  },
+  {
+    "id": "w59",
+    "text": "azul.",
+    "start": 43.68,
+    "end": 46.8
+  },
+  {
+    "id": "w60",
+    "text": "E",
+    "start": 46.8,
+    "end": 47.04
+  },
+  {
+    "id": "w61",
+    "text": "a",
+    "start": 47.04,
+    "end": 47.2
+  },
+  {
+    "id": "w62",
+    "text": "fila",
+    "start": 47.2,
+    "end": 47.6
+  },
+  {
+    "id": "w63",
+    "text": "cai",
+    "start": 47.6,
+    "end": 48
+  },
+  {
+    "id": "w64",
+    "text": "para",
+    "start": 48,
+    "end": 48.16
+  },
+  {
+    "id": "w65",
+    "text": "1.",
+    "start": 48.16,
+    "end": 48.48
+  },
+  {
+    "id": "w66",
+    "text": "E",
+    "start": 48.48,
+    "end": 48.64
+  },
+  {
+    "id": "w67",
+    "text": "os",
+    "start": 48.64,
+    "end": 48.8
+  },
+  {
+    "id": "w68",
+    "text": "concluídos",
+    "start": 48.8,
+    "end": 49.52
+  },
+  {
+    "id": "w69",
+    "text": "sobem",
+    "start": 49.52,
+    "end": 49.84
+  },
+  {
+    "id": "w70",
+    "text": "para",
+    "start": 49.92,
+    "end": 50.16
+  },
+  {
+    "id": "w71",
+    "text": "dois",
+    "start": 50.16,
+    "end": 50.32
+  },
+  {
+    "id": "w72",
+    "text": "já.",
+    "start": 50.56,
+    "end": 51.52
+  },
+  {
+    "id": "w73",
+    "text": "Partindo",
+    "start": 54.32,
+    "end": 55.04
+  },
+  {
+    "id": "w74",
+    "text": "agora",
+    "start": 55.04,
+    "end": 55.36
+  },
+  {
+    "id": "w75",
+    "text": "para",
+    "start": 55.36,
+    "end": 55.52
+  },
+  {
+    "id": "w76",
+    "text": "a",
+    "start": 55.52,
+    "end": 55.6
+  },
+  {
+    "id": "w77",
+    "text": "conclusão",
+    "start": 55.6,
+    "end": 56.08
+  },
+  {
+    "id": "w78",
+    "text": "da",
+    "start": 56.08,
+    "end": 56.16
+  },
+  {
+    "id": "w79",
+    "text": "fila,",
+    "start": 56.16,
+    "end": 56.56
+  },
+  {
+    "id": "w80",
+    "text": "nós",
+    "start": 56.64,
+    "end": 56.88
+  },
+  {
+    "id": "w81",
+    "text": "clicamos",
+    "start": 56.88,
+    "end": 57.52
+  },
+  {
+    "id": "w82",
+    "text": "mais",
+    "start": 57.52,
+    "end": 57.68
+  },
+  {
+    "id": "w83",
+    "text": "uma",
+    "start": 57.68,
+    "end": 57.84
+  },
+  {
+    "id": "w84",
+    "text": "vez",
+    "start": 57.84,
+    "end": 58.08
+  },
+  {
+    "id": "w85",
+    "text": "no",
+    "start": 58.08,
+    "end": 58.32
+  },
+  {
+    "id": "w86",
+    "text": "azul.",
+    "start": 58.32,
+    "end": 59.04
+  },
+  {
+    "id": "w87",
+    "text": "Perfeito,",
+    "start": 59.04,
+    "end": 59.68
+  },
+  {
+    "id": "w88",
+    "text": "então",
+    "start": 59.68,
+    "end": 59.84
+  },
+  {
+    "id": "w89",
+    "text": "a",
+    "start": 60,
+    "end": 60.08
+  },
+  {
+    "id": "w90",
+    "text": "fila",
+    "start": 60.08,
+    "end": 60.48
+  },
+  {
+    "id": "w91",
+    "text": "se.",
+    "start": 60.48,
+    "end": 60.88
+  },
+  {
+    "id": "w92",
+    "text": "Acabou",
+    "start": 61.63,
+    "end": 62.27
+  },
+  {
+    "id": "w93",
+    "text": "a",
+    "start": 62.27,
+    "end": 62.35
+  },
+  {
+    "id": "w94",
+    "text": "fila.",
+    "start": 62.35,
+    "end": 63.23
+  },
+  {
+    "id": "w95",
+    "text": "Então",
+    "start": 63.23,
+    "end": 63.55
+  },
+  {
+    "id": "w96",
+    "text": "zerou.",
+    "start": 63.71,
+    "end": 64.35
+  },
+  {
+    "id": "w97",
+    "text": "Agora",
+    "start": 64.35,
+    "end": 64.67
+  },
+  {
+    "id": "w98",
+    "text": "aperta",
+    "start": 64.67,
+    "end": 64.91
+  },
+  {
+    "id": "w99",
+    "text": "de",
+    "start": 65.23,
+    "end": 65.39
+  },
+  {
+    "id": "w100",
+    "text": "novo.",
+    "start": 65.39,
+    "end": 66.35
+  },
+  {
+    "id": "w101",
+    "text": "A",
+    "start": 67.31,
+    "end": 67.63
+  },
+  {
+    "id": "w102",
+    "text": "fila",
+    "start": 67.63,
+    "end": 68.11
+  },
+  {
+    "id": "w103",
+    "text": "não",
+    "start": 68.11,
+    "end": 68.27
+  },
+  {
+    "id": "w104",
+    "text": "fica",
+    "start": 68.27,
+    "end": 68.59
+  },
+  {
+    "id": "w105",
+    "text": "negativa.",
+    "start": 68.59,
+    "end": 69.07
+  },
+  {
+    "id": "w106",
+    "text": "O",
+    "start": 69.15,
+    "end": 69.31
+  },
+  {
+    "id": "w107",
+    "text": "LED",
+    "start": 69.31,
+    "end": 69.55
+  },
+  {
+    "id": "w108",
+    "text": "vermelho",
+    "start": 69.71,
+    "end": 70.11
+  },
+  {
+    "id": "w109",
+    "text": "acende,",
+    "start": 70.11,
+    "end": 70.59
+  },
+  {
+    "id": "w110",
+    "text": "o",
+    "start": 70.59,
+    "end": 70.75
+  },
+  {
+    "id": "w111",
+    "text": "LCD",
+    "start": 70.75,
+    "end": 71.15
+  },
+  {
+    "id": "w112",
+    "text": "avisa",
+    "start": 71.15,
+    "end": 71.47
+  },
+  {
+    "id": "w113",
+    "text": "fila",
+    "start": 71.63,
+    "end": 72.03
+  },
+  {
+    "id": "w114",
+    "text": "vazia",
+    "start": 72.03,
+    "end": 72.51
+  },
+  {
+    "id": "w115",
+    "text": "e",
+    "start": 72.59,
+    "end": 72.75
+  },
+  {
+    "id": "w116",
+    "text": "o",
+    "start": 72.75,
+    "end": 72.91
+  },
+  {
+    "id": "w117",
+    "text": "sistema",
+    "start": 72.91,
+    "end": 73.23
+  },
+  {
+    "id": "w118",
+    "text": "registra",
+    "start": 73.23,
+    "end": 73.79
+  },
+  {
+    "id": "w119",
+    "text": "uma",
+    "start": 73.79,
+    "end": 73.95
+  },
+  {
+    "id": "w120",
+    "text": "saída",
+    "start": 73.95,
+    "end": 74.35
+  },
+  {
+    "id": "w121",
+    "text": "inválida.",
+    "start": 74.35,
+    "end": 76.03
+  },
+  {
+    "id": "w122",
+    "text": "Que",
+    "start": 76.03,
+    "end": 76.35
+  },
+  {
+    "id": "w123",
+    "text": "aparece",
+    "start": 76.35,
+    "end": 76.91
+  },
+  {
+    "id": "w124",
+    "text": "em",
+    "start": 76.91,
+    "end": 76.99
+  },
+  {
+    "id": "w125",
+    "text": "vermelho",
+    "start": 76.99,
+    "end": 77.47
+  },
+  {
+    "id": "w126",
+    "text": "no",
+    "start": 77.47,
+    "end": 77.63
+  },
+  {
+    "id": "w127",
+    "text": "nosso",
+    "start": 77.63,
+    "end": 77.87
+  },
+  {
+    "id": "w128",
+    "text": "dashboard.",
+    "start": 77.87,
+    "end": 79.39
+  },
+  {
+    "id": "w129",
+    "text": "Agora,",
+    "start": 80.99,
+    "end": 82.43
+  },
+  {
+    "id": "w130",
+    "text": "atualização",
+    "start": 82.43,
+    "end": 83.39
+  },
+  {
+    "id": "w131",
+    "text": "da",
+    "start": 83.39,
+    "end": 83.63
+  },
+  {
+    "id": "w132",
+    "text": "estimativa.",
+    "start": 83.63,
+    "end": 85.71
+  },
+  {
+    "id": "w133",
+    "text": "A",
+    "start": 85.95,
+    "end": 86.11
+  },
+  {
+    "id": "w134",
+    "text": "cada",
+    "start": 86.27,
+    "end": 86.59
+  },
+  {
+    "id": "w135",
+    "text": "chegada,",
+    "start": 86.59,
+    "end": 86.99
+  },
+  {
+    "id": "w136",
+    "text": "o",
+    "start": 86.99,
+    "end": 87.07
+  },
+  {
+    "id": "w137",
+    "text": "backhand",
+    "start": 87.07,
+    "end": 87.47
+  },
+  {
+    "id": "w138",
+    "text": "recalcula",
+    "start": 88.11,
+    "end": 88.83
+  },
+  {
+    "id": "w139",
+    "text": "a",
+    "start": 88.83,
+    "end": 88.99
+  },
+  {
+    "id": "w140",
+    "text": "espera",
+    "start": 88.99,
+    "end": 89.47
+  },
+  {
+    "id": "w141",
+    "text": "e",
+    "start": 89.47,
+    "end": 89.63
+  },
+  {
+    "id": "w142",
+    "text": "manda",
+    "start": 89.63,
+    "end": 90.03
+  },
+  {
+    "id": "w143",
+    "text": "de",
+    "start": 90.03,
+    "end": 90.11
+  },
+  {
+    "id": "w144",
+    "text": "volta.",
+    "start": 90.11,
+    "end": 90.59
+  },
+  {
+    "id": "w145",
+    "text": "6",
+    "start": 90.59,
+    "end": 90.99
+  },
+  {
+    "id": "w146",
+    "text": "minutos,",
+    "start": 90.99,
+    "end": 91.47
+  },
+  {
+    "id": "w147",
+    "text": "12,",
+    "start": 91.47,
+    "end": 91.95
+  },
+  {
+    "id": "w148",
+    "text": "18",
+    "start": 92.03,
+    "end": 92.27
+  },
+  {
+    "id": "w149",
+    "text": "minutos.",
+    "start": 92.35,
+    "end": 92.51
+  },
+  {
+    "id": "w150",
+    "text": "Ela",
+    "start": 92.59,
+    "end": 92.83
+  },
+  {
+    "id": "w151",
+    "text": "aparece",
+    "start": 92.83,
+    "end": 93.31
+  },
+  {
+    "id": "w152",
+    "text": "no",
+    "start": 93.31,
+    "end": 93.47
+  },
+  {
+    "id": "w153",
+    "text": "LCD",
+    "start": 93.47,
+    "end": 93.95
+  },
+  {
+    "id": "w154",
+    "text": "e",
+    "start": 93.95,
+    "end": 94.03
+  },
+  {
+    "id": "w155",
+    "text": "no",
+    "start": 94.03,
+    "end": 94.19
+  },
+  {
+    "id": "w156",
+    "text": "dashboard",
+    "start": 94.19,
+    "end": 94.75
+  },
+  {
+    "id": "w157",
+    "text": "em",
+    "start": 94.75,
+    "end": 94.91
+  },
+  {
+    "id": "w158",
+    "text": "menos",
+    "start": 94.91,
+    "end": 95.15
+  },
+  {
+    "id": "w159",
+    "text": "de",
+    "start": 95.15,
+    "end": 95.31
+  },
+  {
+    "id": "w160",
+    "text": "um",
+    "start": 95.31,
+    "end": 95.47
+  },
+  {
+    "id": "w161",
+    "text": "segundo.",
+    "start": 95.47,
+    "end": 96.75
+  }
+]

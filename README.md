@@ -1,6 +1,6 @@
-# Citizen Assist AI — Sistema Inteligente de Gerenciamento de Filas Virtuais
+# ThriveQueue — Sistema Inteligente de Gerenciamento de Filas Virtuais
 
-**GS 2026.2 · Computer Organization and Architecture · 1CC-FEV**
+Módulo de fila virtual do **Citizen Assist AI** · **GS 2026.2 · Computer Organization and Architecture · 1CC-FEV**
 Rafael Marinucci Peres (RM 569729) · David dos Reis Cardoso (RM 568938)
 
 > Protótipo acadêmico. **Não é canal oficial** de nenhum órgão. As estimativas de espera são aproximadas e o histórico usado para treinar a previsão é **simulado**. Nenhum dado pessoal é coletado: só o tipo do evento, o horário e o tamanho da fila.

@@ -1,0 +1,70 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "Inter", sans-serif;
+    }
+    #ni-veu {
+      position: absolute;
+      inset: 0;
+      background: rgba(4, 20, 15, 0.74);
+    }
+    #ni-grupo {
+      position: absolute;
+      left: 240px;
+      top: 280px;
+    }
+    #ni-kicker {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #a7f3d0;
+    }
+    #ni-num {
+      font-size: 240px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      color: #6ee7b7;
+      font-variant-numeric: tabular-nums;
+    }
+    #ni-label {
+      margin-top: 8px;
+      font-size: 54px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    #ni-legenda {
+      margin-top: 24px;
+      font-size: 32px;
+      color: #c7ddd3;
+    }
+  </style>
+  <div id="root" data-composition-id="numero-ia" data-width="1920" data-height="1080">
+    <div id="ni-cena" class="clip" data-start="0" data-duration="3.4" data-track-index="0">
+      <div id="ni-veu"></div>
+      <div id="ni-grupo">
+        <div id="ni-kicker">ERRO MÉDIO NOS DIAS DE TESTE</div>
+        <div id="ni-num">−0%</div>
+        <div id="ni-label">de erro com a regressão linear</div>
+        <div id="ni-legenda">2,10 min (IA) contra 2,85 min (média histórica) · dados simulados</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const num = document.getElementById("ni-num");
+    const cont = { v: 0 };
+    tl.fromTo("#ni-veu", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power1.out" }, 0);
+    tl.fromTo("#ni-grupo", { opacity: 0, y: 28 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.1);
+    tl.fromTo(cont, { v: 0 }, {
+      v: 26,
+      duration: 1.0,
+      ease: "power2.out",
+      onUpdate: () => { num.textContent = "−" + Math.round(cont.v) + "%"; },
+    }, 0.2);
+    tl.fromTo("#ni-grupo", { opacity: 1 }, { opacity: 0, duration: 0.3, ease: "power2.in", immediateRender: false }, 3.0);
+    window.__timelines["numero-ia"] = tl;
+  </script>
+</template>

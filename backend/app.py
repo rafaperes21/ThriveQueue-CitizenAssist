@@ -1,4 +1,4 @@
-"""Servidor web da fila virtual.
+"""Servidor web do ThriveQueue (fila virtual).
 
 Uso (na pasta do projeto):
     python -m backend.app              -> conecta no broker MQTT e abre o dashboard
@@ -87,7 +87,7 @@ def api_metricas():
 def main():
     global cliente
 
-    parser = argparse.ArgumentParser(description="Backend da fila virtual")
+    parser = argparse.ArgumentParser(description="Backend do ThriveQueue")
     parser.add_argument("--sem-mqtt", action="store_true", help="nao conecta no broker")
     parser.add_argument("--broker", default=config.MQTT_BROKER)
     parser.add_argument("--porta", type=int, default=config.PORTA_WEB)

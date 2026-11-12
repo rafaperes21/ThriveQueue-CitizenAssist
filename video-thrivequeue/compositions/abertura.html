@@ -1,0 +1,107 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "Inter", sans-serif;
+      color: #ffffff;
+    }
+    #ab-fundo {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(120% 90% at 20% 15%, #0e7490 0%, #065f46 45%, #062a20 100%);
+    }
+    #ab-grupo {
+      position: absolute;
+      left: 240px;
+      top: 300px;
+    }
+    #ab-marca {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+    #ab-icone {
+      width: 132px;
+      height: 132px;
+      border-radius: 34px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 2px solid rgba(255, 255, 255, 0.32);
+      display: grid;
+      place-items: center;
+    }
+    #ab-icone svg {
+      width: 74px;
+      height: 74px;
+      fill: none;
+      stroke: #ffffff;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    #ab-nome {
+      font-size: 150px;
+      font-weight: 900;
+      letter-spacing: -0.035em;
+      line-height: 1;
+    }
+    #ab-sub {
+      margin-top: 34px;
+      font-size: 44px;
+      font-weight: 400;
+      color: #d1fae5;
+    }
+    #ab-linha {
+      margin-top: 70px;
+      width: 120px;
+      height: 6px;
+      border-radius: 3px;
+      background: #f59e0b;
+    }
+    #ab-curso {
+      margin-top: 30px;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: #a7f3d0;
+    }
+    #ab-nomes {
+      margin-top: 12px;
+      font-size: 30px;
+      color: #ffffff;
+    }
+  </style>
+  <div id="root" data-composition-id="abertura" data-width="1920" data-height="1080">
+    <div id="ab-cena" class="clip" data-start="0" data-duration="4.4" data-track-index="0">
+      <div id="ab-fundo"></div>
+      <div id="ab-grupo">
+        <div id="ab-marca">
+          <div id="ab-icone">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+            </svg>
+          </div>
+          <div id="ab-nome">ThriveQueue</div>
+        </div>
+        <div id="ab-sub">Fila virtual inteligente para o Citizen Assist AI</div>
+        <div id="ab-linha"></div>
+        <div id="ab-curso">GLOBAL SOLUTION 2026.2 · COMPUTER ORGANIZATION AND ARCHITECTURE · FIAP 1CC-FEV</div>
+        <div id="ab-nomes">Rafael Marinucci Peres (RM 569729) · David dos Reis Cardoso (RM 568938)</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // marca ja aparece no primeiro quadro (vira a miniatura); so assenta de leve
+    tl.fromTo("#ab-marca", { scale: 1.04, transformOrigin: "0% 50%" }, { scale: 1, duration: 1.2, ease: "power2.out" }, 0);
+    tl.fromTo("#ab-sub", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.2);
+    tl.fromTo("#ab-linha", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.5, ease: "power2.out" }, 0.35);
+    tl.fromTo("#ab-curso", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 0.4);
+    tl.fromTo("#ab-nomes", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 0.5);
+    // sai em fade por cima do primeiro bloco
+    tl.fromTo("#ab-grupo", { opacity: 1 }, { opacity: 0, duration: 0.3, ease: "power2.in" }, 3.85);
+    tl.fromTo("#ab-fundo", { opacity: 1 }, { opacity: 0, duration: 0.4, ease: "power1.in" }, 3.95);
+    window.__timelines["abertura"] = tl;
+  </script>
+</template>
