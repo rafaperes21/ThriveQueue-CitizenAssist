@@ -1,0 +1,4 @@
+# Bibliotecas do projeto Wokwi
+PubSubClient
+LiquidCrystal I2C
+ArduinoJson

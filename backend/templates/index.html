@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fila Virtual - Citizen Assist AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- icones (traço no estilo Lucide) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-folha" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+    <symbol id="i-pessoas" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-pessoa" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/></symbol>
+    <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-entrada" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></symbol>
+    <symbol id="i-alerta" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+    <symbol id="i-rede" viewBox="0 0 24 24"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.86a10 10 0 0 1 14 0"/><path d="M8.5 16.43a5 5 0 0 1 7 0"/></symbol>
+    <symbol id="i-grafico" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></symbol>
+  </svg>
+
+  <header class="topo">
+    <div class="topo-conteudo">
+      <div class="marca">
+        <span class="marca-icone"><svg class="icone" aria-hidden="true"><use href="#i-folha"/></svg></span>
+        <div>
+          <h1>Fila Virtual</h1>
+          <p>Posto de Atendimento ao Cidadão · Citizen Assist AI</p>
+        </div>
+      </div>
+      <ul class="conexao" aria-label="Situação das conexões">
+        <li id="status-esp" class="chip">
+          <svg class="icone" aria-hidden="true"><use href="#i-chip"/></svg>
+          <span>ESP32: verificando...</span>
+        </li>
+        <li id="status-mqtt" class="chip">
+          <svg class="icone" aria-hidden="true"><use href="#i-rede"/></svg>
+          <span>MQTT: verificando...</span>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <p id="resumo" class="resumo" role="status" aria-atomic="true">Carregando informações da fila...</p>
+
+    <section class="indicadores" aria-label="Indicadores da fila">
+      <article class="card card-fila">
+        <h2><svg class="icone" aria-hidden="true"><use href="#i-pessoas"/></svg> Pessoas na fila</h2>
+        <p class="numero" id="fila">–</p>
+        <div class="fila-visual" id="fila-visual" aria-hidden="true"></div>
+      </article>
+
+      <article class="card card-espera">
+        <h2><svg class="icone" aria-hidden="true"><use href="#i-relogio"/></svg> Tempo estimado de espera</h2>
+        <p class="numero" id="espera-ia">–</p>
+        <p class="legenda">Previsão por regressão linear (IA)</p>
+        <div class="comparacao">
+          <div class="barra-linha">
+            <span class="barra-rotulo">IA</span>
+            <span class="barra"><span class="barra-valor ia" id="barra-ia"></span></span>
+            <span class="barra-num" id="valor-ia">–</span>
+          </div>
+          <div class="barra-linha">
+            <span class="barra-rotulo">Média</span>
+            <span class="barra"><span class="barra-valor media" id="barra-conv"></span></span>
+            <span class="barra-num" id="espera-conv">–</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card-concluidos">
+        <h2><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg> Atendimentos concluídos</h2>
+        <p class="numero" id="concluidos">–</p>
+        <p class="legenda">Duração média recente: <strong id="duracao">–</strong></p>
+      </article>
+    </section>
+
+    <div class="grade">
+      <section class="card painel" aria-labelledby="titulo-eventos">
+        <h2 id="titulo-eventos"><svg class="icone" aria-hidden="true"><use href="#i-relogio"/></svg> Últimos eventos</h2>
+        <ol class="eventos" id="eventos">
+          <li class="vazio">Aguardando o primeiro evento do posto...</li>
+        </ol>
+      </section>
+
+      <section class="card painel" aria-labelledby="titulo-modelo">
+        <h2 id="titulo-modelo"><svg class="icone" aria-hidden="true"><use href="#i-grafico"/></svg> Como a espera é calculada</h2>
+        <p>
+          <strong>Média histórica:</strong> pessoas na fila × duração média de um atendimento
+          (<span id="media-hist">–</span>).
+        </p>
+        <p>
+          <strong>Regressão linear:</strong> considera também a duração dos últimos atendimentos e o horário do dia.
+        </p>
+        <h3>Erro médio nos dias de teste (quanto menor, melhor)</h3>
+        <div class="erros" id="erros"></div>
+        <table class="metricas">
+          <caption class="sr-only">Métricas de erro das duas estimativas</caption>
+          <thead>
+            <tr><th scope="col">Método</th><th scope="col">MAE</th><th scope="col">RMSE</th><th scope="col">R²</th></tr>
+          </thead>
+          <tbody id="metricas">
+            <tr><td colspan="4">Carregando...</td></tr>
+          </tbody>
+        </table>
+        <p class="legenda"><svg class="icone pequeno" aria-hidden="true"><use href="#i-info"/></svg>
+          Modelo treinado e testado com dados <strong>simulados</strong> (<span id="n-dados">–</span>).</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <p><strong>Aviso:</strong> protótipo acadêmico (FIAP · GS 2026.2). Não é um canal oficial de atendimento.
+      O tempo de espera é uma estimativa e pode variar. Nenhum dado pessoal é coletado.</p>
+    <p>Rafael Marinucci Peres (RM 569729) · David dos Reis Cardoso (RM 568938)</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

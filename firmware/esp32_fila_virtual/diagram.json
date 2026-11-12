@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "author": "Rafael Marinucci Peres (RM 569729) / David dos Reis Cardoso (RM 568938)",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd",
+      "top": -150,
+      "left": 160,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnChegada",
+      "top": 60,
+      "left": 230,
+      "attrs": { "color": "green", "label": "CHEGADA" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnAtendido",
+      "top": 140,
+      "left": 230,
+      "attrs": { "color": "blue", "label": "ATENDIDO" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledVerde",
+      "top": 230,
+      "left": 250,
+      "attrs": { "color": "limegreen", "label": "OK" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledVermelho",
+      "top": 230,
+      "left": 310,
+      "attrs": { "color": "red", "label": "ERRO" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 300,
+      "left": 200,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 300,
+      "left": 290,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+
+    [ "lcd:GND", "esp:GND.1", "black", [] ],
+    [ "lcd:VCC", "esp:VIN", "red", [] ],
+    [ "lcd:SDA", "esp:D21", "purple", [] ],
+    [ "lcd:SCL", "esp:D22", "orange", [] ],
+
+    [ "btnChegada:1.l", "esp:D18", "green", [] ],
+    [ "btnChegada:2.l", "esp:GND.1", "black", [] ],
+    [ "btnAtendido:1.l", "esp:D19", "blue", [] ],
+    [ "btnAtendido:2.l", "esp:GND.1", "black", [] ],
+
+    [ "esp:D2", "r1:1", "green", [] ],
+    [ "r1:2", "ledVerde:A", "green", [] ],
+    [ "ledVerde:C", "esp:GND.1", "black", [] ],
+
+    [ "esp:D4", "r2:1", "red", [] ],
+    [ "r2:2", "ledVermelho:A", "red", [] ],
+    [ "ledVermelho:C", "esp:GND.1", "black", [] ]
+  ],
+  "dependencies": {}
+}

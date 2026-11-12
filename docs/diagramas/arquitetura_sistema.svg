@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 880" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#36584b"/>
+    </marker>
+    <style>
+      .titulo { font-size: 26px; font-weight: 700; fill: #0b2e24; }
+      .secao { font-size: 15px; font-weight: 700; letter-spacing: 1.5px; }
+      .nome { font-size: 17px; font-weight: 700; fill: #0b2e24; }
+      .sub { font-size: 13.5px; fill: #4b6358; }
+      .rotulo { font-size: 12.5px; font-weight: 600; fill: #36584b; }
+      .linha { stroke: #36584b; stroke-width: 2; fill: none; }
+      .entrada { fill: #e2f3f7; stroke: #0e7490; stroke-width: 2; }
+      .saida { fill: #fef3e2; stroke: #b45309; stroke-width: 2; }
+      .proc { fill: #ffffff; stroke: #047857; stroke-width: 2; }
+      .mem { fill: #e3f6ec; stroke: #047857; stroke-width: 2; }
+      .rede { fill: #eef2f7; stroke: #475569; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="880" fill="#ffffff"/>
+  <text x="40" y="48" class="titulo">Arquitetura do sistema — Fila Virtual (Citizen Assist AI)</text>
+  <text x="40" y="74" class="sub">ESP32 simulado no Wokwi · backend Python · dashboard web</text>
+
+  <!-- ENTRADA -->
+  <text x="40" y="132" class="secao" fill="#0e7490">ENTRADA</text>
+  <rect x="40" y="148" width="250" height="72" rx="12" class="entrada"/>
+  <text x="58" y="178" class="nome">Botão CHEGADA</text>
+  <text x="58" y="202" class="sub">GPIO 18 · pull-up interno</text>
+  <rect x="40" y="238" width="250" height="72" rx="12" class="entrada"/>
+  <text x="58" y="268" class="nome">Botão ATENDIDO</text>
+  <text x="58" y="292" class="sub">GPIO 19 · pull-up interno</text>
+  <rect x="40" y="328" width="250" height="72" rx="12" class="entrada"/>
+  <text x="58" y="358" class="nome">Serial Monitor</text>
+  <text x="58" y="382" class="sub">UART0 · botões virtuais c / a</text>
+
+  <line x1="290" y1="184" x2="358" y2="184" class="linha" marker-end="url(#seta)"/>
+  <text x="300" y="176" class="rotulo">GPIO</text>
+  <line x1="290" y1="274" x2="358" y2="274" class="linha" marker-end="url(#seta)"/>
+  <text x="300" y="266" class="rotulo">GPIO</text>
+  <line x1="290" y1="364" x2="358" y2="364" class="linha" marker-end="url(#seta)"/>
+  <text x="300" y="356" class="rotulo">UART</text>
+
+  <!-- ESP32 -->
+  <rect x="360" y="108" width="620" height="450" rx="18" fill="#f3faf6" stroke="#047857" stroke-width="3"/>
+  <text x="384" y="140" class="nome" fill="#047857">ESP32 DevKit V1 · Xtensa LX6 dual-core · 240 MHz</text>
+
+  <rect x="385" y="158" width="275" height="122" rx="12" class="proc"/>
+  <text x="401" y="186" class="nome">Núcleo 1 · loop()</text>
+  <text x="401" y="210" class="sub">lê botões (polling + debounce 50 ms)</text>
+  <text x="401" y="230" class="sub">valida: 0 ≤ fila ≤ 99</text>
+  <text x="401" y="250" class="sub">registra o evento com horário</text>
+  <text x="401" y="270" class="sub">atualiza LCD e LEDs</text>
+
+  <rect x="680" y="158" width="275" height="122" rx="12" class="proc"/>
+  <text x="696" y="186" class="nome">Núcleo 0 · tarefaRede</text>
+  <text x="696" y="210" class="sub">tarefa FreeRTOS</text>
+  <text x="696" y="230" class="sub">Wi-Fi + NTP (horário real)</text>
+  <text x="696" y="250" class="sub">MQTT: publica eventos</text>
+  <text x="696" y="270" class="sub">recebe a previsão</text>
+
+  <rect x="385" y="306" width="570" height="112" rx="12" class="mem"/>
+  <text x="401" y="334" class="nome">SRAM 520 KB (volátil)</text>
+  <text x="401" y="358" class="sub">contador da fila e de concluídos · buffer circular: 100 eventos × 8 B = 800 B</text>
+  <text x="401" y="378" class="sub">pilhas das tarefas · heap (~219 KB livres de 320 KB)</text>
+  <text x="401" y="398" class="sub">mutex protege o buffer compartilhado entre os dois núcleos</text>
+
+  <line x1="522" y1="280" x2="522" y2="304" class="linha" marker-start="url(#seta)" marker-end="url(#seta)"/>
+  <line x1="817" y1="280" x2="817" y2="304" class="linha" marker-start="url(#seta)" marker-end="url(#seta)"/>
+
+  <rect x="385" y="440" width="275" height="96" rx="12" class="mem"/>
+  <text x="401" y="468" class="nome">Flash 4 MB (SPI)</text>
+  <text x="401" y="492" class="sub">não volátil · guarda o firmware</text>
+  <text x="401" y="512" class="sub">programa: 963 KB (cache de instruções)</text>
+
+  <rect x="680" y="440" width="275" height="96" rx="12" class="rede"/>
+  <text x="696" y="468" class="nome">Rádio Wi-Fi</text>
+  <text x="696" y="492" class="sub">802.11 b/g/n · 2,4 GHz</text>
+  <text x="696" y="512" class="sub">pilha TCP/IP (lwIP)</text>
+
+  <!-- flash -> nucleo 1 (busca de instrucoes) e nucleo 0 -> radio -->
+  <path d="M385 488 H372 V219 H383" class="linha" marker-end="url(#seta)"/>
+  <path d="M955 219 H968 V488 H957" class="linha" marker-start="url(#seta)" marker-end="url(#seta)"/>
+
+  <!-- SAIDA -->
+  <text x="1060" y="132" class="secao" fill="#b45309">SAÍDA</text>
+  <rect x="1060" y="148" width="300" height="72" rx="12" class="saida"/>
+  <text x="1078" y="178" class="nome">LCD 16x2</text>
+  <text x="1078" y="202" class="sub">I²C · SDA 21 / SCL 22 · end. 0x27</text>
+  <rect x="1060" y="238" width="300" height="72" rx="12" class="saida"/>
+  <text x="1078" y="268" class="nome">LED verde</text>
+  <text x="1078" y="292" class="sub">GPIO 2 · operação válida</text>
+  <rect x="1060" y="328" width="300" height="72" rx="12" class="saida"/>
+  <text x="1078" y="358" class="nome">LED vermelho</text>
+  <text x="1078" y="382" class="sub">GPIO 4 · operação inválida</text>
+  <rect x="1060" y="418" width="300" height="72" rx="12" class="saida"/>
+  <text x="1078" y="448" class="nome">Log de eventos</text>
+  <text x="1078" y="472" class="sub">UART0 · Serial Monitor</text>
+
+  <line x1="982" y1="184" x2="1058" y2="184" class="linha" marker-end="url(#seta)"/>
+  <text x="996" y="176" class="rotulo">I²C</text>
+  <line x1="982" y1="274" x2="1058" y2="274" class="linha" marker-end="url(#seta)"/>
+  <text x="996" y="266" class="rotulo">GPIO</text>
+  <line x1="982" y1="364" x2="1058" y2="364" class="linha" marker-end="url(#seta)"/>
+  <text x="996" y="356" class="rotulo">GPIO</text>
+  <line x1="982" y1="454" x2="1058" y2="454" class="linha" marker-end="url(#seta)"/>
+  <text x="996" y="446" class="rotulo">UART</text>
+
+  <!-- COMUNICACAO -->
+  <text x="40" y="618" class="secao" fill="#475569">COMUNICAÇÃO</text>
+  <path d="M817 536 V590 H425 V628" class="linha" marker-start="url(#seta)" marker-end="url(#seta)"/>
+
+  <rect x="40" y="630" width="230" height="104" rx="12" class="rede"/>
+  <text x="58" y="660" class="nome">Servidor NTP</text>
+  <text x="58" y="684" class="sub">pool.ntp.org</text>
+  <text x="58" y="704" class="sub">horário dos eventos</text>
+
+  <rect x="310" y="630" width="230" height="104" rx="12" class="rede"/>
+  <text x="328" y="660" class="nome">Rede Wi-Fi + Internet</text>
+  <text x="328" y="684" class="sub">Wokwi-GUEST</text>
+  <text x="328" y="704" class="sub">TCP/IP</text>
+
+  <rect x="580" y="630" width="230" height="104" rx="12" class="rede"/>
+  <text x="598" y="660" class="nome">Broker MQTT</text>
+  <text x="598" y="684" class="sub">broker.hivemq.com:1883</text>
+  <text x="598" y="704" class="sub">evento · status · previsao</text>
+
+  <rect x="850" y="630" width="230" height="104" rx="12" class="proc"/>
+  <text x="868" y="660" class="nome">Backend Python</text>
+  <text x="868" y="684" class="sub">Flask + paho-mqtt</text>
+  <text x="868" y="704" class="sub">previsão: média × regressão</text>
+  <text x="868" y="724" class="sub">histórico em eventos.csv</text>
+
+  <rect x="1120" y="630" width="240" height="104" rx="12" class="saida"/>
+  <text x="1138" y="660" class="nome">Dashboard</text>
+  <text x="1138" y="684" class="sub">navegador · celular</text>
+  <text x="1138" y="704" class="sub">atualiza a cada 2 s</text>
+
+  <line x1="308" y1="682" x2="272" y2="682" class="linha" marker-end="url(#seta)" marker-start="url(#seta)"/>
+  <text x="275" y="672" class="rotulo">UDP</text>
+  <line x1="542" y1="682" x2="578" y2="682" class="linha" marker-end="url(#seta)" marker-start="url(#seta)"/>
+  <line x1="812" y1="682" x2="848" y2="682" class="linha" marker-end="url(#seta)" marker-start="url(#seta)"/>
+  <line x1="1082" y1="682" x2="1118" y2="682" class="linha" marker-end="url(#seta)" marker-start="url(#seta)"/>
+  <text x="514" y="756" class="rotulo">MQTT sobre TCP: eventos sobem, a previsão desce</text>
+  <text x="1040" y="756" class="rotulo">HTTP + JSON</text>
+
+  <text x="40" y="820" class="sub" font-size="14">Fluxo: botão → GPIO → núcleo 1 valida e grava o evento na SRAM → LCD/LEDs → núcleo 0 lê o buffer → Wi-Fi → MQTT →</text>
+  <text x="40" y="842" class="sub" font-size="14">backend calcula a espera → MQTT → LCD do ESP32 · e em paralelo o dashboard consulta o backend por HTTP.</text>
+</svg>

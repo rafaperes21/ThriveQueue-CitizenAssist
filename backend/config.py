@@ -1,0 +1,9 @@
+MQTT_BROKER = "broker.hivemq.com"
+MQTT_PORTA = 1883
+
+PREFIXO = "fiap1cc/569729-568938/fila"
+TOPICO_EVENTO = PREFIXO + "/evento"
+TOPICO_STATUS = PREFIXO + "/status"
+TOPICO_PREVISAO = PREFIXO + "/previsao"
+
+PORTA_WEB = 5000

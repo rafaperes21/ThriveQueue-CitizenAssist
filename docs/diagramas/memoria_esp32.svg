@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 860" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#36584b"/>
+    </marker>
+    <style>
+      .titulo { font-size: 26px; font-weight: 700; fill: #0b2e24; }
+      .secao { font-size: 15px; font-weight: 700; letter-spacing: 1.5px; fill: #047857; }
+      .nome { font-size: 17px; font-weight: 700; fill: #0b2e24; }
+      .sub { font-size: 13.5px; fill: #4b6358; }
+      .valor { font-size: 14px; font-weight: 700; fill: #0b2e24; }
+      .branco { font-size: 13.5px; font-weight: 700; fill: #ffffff; }
+      .linha { stroke: #36584b; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="860" fill="#ffffff"/>
+  <text x="40" y="48" class="titulo">Organização e uso da memória — ESP32</text>
+  <text x="40" y="74" class="sub">Valores medidos no Wokwi com o comando "s" do firmware (12/11/2026)</text>
+
+  <!-- HIERARQUIA -->
+  <text x="40" y="128" class="secao">HIERARQUIA</text>
+
+  <rect x="150" y="146" width="220" height="62" rx="10" fill="#065f46"/>
+  <text x="260" y="173" class="branco" text-anchor="middle">Registradores</text>
+  <text x="260" y="194" font-size="12.5" fill="#d1fae5" text-anchor="middle">32 bits · dentro de cada núcleo</text>
+
+  <rect x="120" y="222" width="280" height="62" rx="10" fill="#047857"/>
+  <text x="260" y="249" class="branco" text-anchor="middle">Cache</text>
+  <text x="260" y="270" font-size="12.5" fill="#d1fae5" text-anchor="middle">guarda trechos da flash em uso</text>
+
+  <rect x="85" y="298" width="350" height="78" rx="10" fill="#e3f6ec" stroke="#047857" stroke-width="2"/>
+  <text x="260" y="326" class="nome" text-anchor="middle">SRAM interna · 520 KB</text>
+  <text x="260" y="348" class="sub" text-anchor="middle">volátil · variáveis, buffer, pilhas, heap</text>
+  <text x="260" y="366" class="sub" text-anchor="middle">perde tudo ao reiniciar</text>
+
+  <rect x="50" y="390" width="420" height="78" rx="10" fill="#f3faf6" stroke="#047857" stroke-width="2"/>
+  <text x="260" y="418" class="nome" text-anchor="middle">Flash externa · 4 MB (SPI)</text>
+  <text x="260" y="440" class="sub" text-anchor="middle">não volátil · código do firmware</text>
+  <text x="260" y="458" class="sub" text-anchor="middle">continua gravada sem energia</text>
+
+  <text x="470" y="128" class="sub" text-anchor="end">▲ mais rápida e menor</text>
+  <text x="470" y="492" class="sub" text-anchor="end">▼ mais lenta e maior</text>
+
+  <rect x="50" y="512" width="200" height="66" rx="10" fill="#eef2f7" stroke="#475569" stroke-width="2"/>
+  <text x="150" y="539" class="nome" text-anchor="middle">ROM · 448 KB</text>
+  <text x="150" y="561" class="sub" text-anchor="middle">boot e funções do chip</text>
+  <rect x="270" y="512" width="200" height="66" rx="10" fill="#eef2f7" stroke="#475569" stroke-width="2"/>
+  <text x="370" y="539" class="nome" text-anchor="middle">RTC · 16 KB</text>
+  <text x="370" y="561" class="sub" text-anchor="middle">mantida no deep sleep</text>
+
+  <!-- USO MEDIDO -->
+  <text x="540" y="128" class="secao">USO MEDIDO</text>
+
+  <!-- flash -->
+  <text x="540" y="164" class="nome">Partição do programa na flash (1,25 MB)</text>
+  <rect x="540" y="176" width="800" height="34" rx="8" fill="#e8f5ee"/>
+  <rect x="540" y="176" width="588" height="34" rx="8" fill="#047857"/>
+  <text x="556" y="199" class="branco">firmware: 963.760 B (74%)</text>
+  <text x="1140" y="199" class="sub">livre: 346.960 B</text>
+  <text x="540" y="232" class="sub">O resto da flash (OTA, sistema de arquivos, NVS) não é usado pelo projeto: o programa ocupa só 23% dos 4 MB.</text>
+
+  <!-- heap -->
+  <text x="540" y="284" class="nome">Heap (memória dinâmica da SRAM) · 320.692 B</text>
+  <rect x="540" y="296" width="800" height="34" rx="8" fill="#e8f5ee"/>
+  <rect x="540" y="296" width="252" height="34" rx="8" fill="#0e7490"/>
+  <rect x="784" y="296" width="33" height="34" fill="#f59e0b"/>
+  <text x="556" y="319" class="branco">em uso: 101 KB</text>
+  <text x="836" y="319" class="valor">livre (mínimo medido): 206.400 B · 64%</text>
+  <rect x="540" y="344" width="14" height="14" rx="3" fill="#0e7490"/>
+  <text x="562" y="356" class="sub">Wi-Fi, pilha TCP/IP, MQTT, bibliotecas e as pilhas das tarefas (já na inicialização)</text>
+  <rect x="540" y="366" width="14" height="14" rx="3" fill="#f59e0b"/>
+  <text x="562" y="378" class="sub">+13 KB durante o uso (buffers de rede), depois estável: sem sinal de vazamento</text>
+
+  <!-- pilhas -->
+  <text x="540" y="430" class="nome">Pilha da tarefa de rede (núcleo 0) · 8.192 B reservados</text>
+  <rect x="540" y="442" width="800" height="34" rx="8" fill="#e8f5ee"/>
+  <rect x="540" y="442" width="220" height="34" rx="8" fill="#047857"/>
+  <text x="556" y="465" class="branco">usado: 2.252 B</text>
+  <text x="776" y="465" class="sub">nunca usado: 5.940 B (72%) · daria para reservar menos</text>
+
+  <!-- struct -->
+  <text x="540" y="528" class="nome">struct Evento · 8 bytes (sem padding)</text>
+  <g font-size="13" text-anchor="middle">
+    <rect x="540" y="542" width="400" height="56" fill="#047857" stroke="#ffffff" stroke-width="2"/>
+    <text x="740" y="566" class="branco">hora · uint32_t</text>
+    <text x="740" y="586" fill="#d1fae5">4 bytes · epoch (NTP)</text>
+    <rect x="940" y="542" width="200" height="56" fill="#0e7490" stroke="#ffffff" stroke-width="2"/>
+    <text x="1040" y="566" class="branco">concluidos · uint16_t</text>
+    <text x="1040" y="586" fill="#cffafe">2 bytes</text>
+    <rect x="1140" y="542" width="100" height="56" fill="#b45309" stroke="#ffffff" stroke-width="2"/>
+    <text x="1190" y="566" class="branco">tipo</text>
+    <text x="1190" y="586" fill="#fef3c7">1 byte</text>
+    <rect x="1240" y="542" width="100" height="56" fill="#b45309" stroke="#ffffff" stroke-width="2"/>
+    <text x="1290" y="566" class="branco">fila</text>
+    <text x="1290" y="586" fill="#fef3c7">1 byte</text>
+  </g>
+  <g class="sub" font-size="12">
+    <text x="540" y="616">byte 0</text><text x="940" y="616">4</text><text x="1140" y="616">6</text><text x="1240" y="616">7</text>
+  </g>
+  <text x="540" y="642" class="sub">Os campos vão do maior para o menor, então o compilador não precisa inserir bytes de alinhamento.</text>
+
+  <!-- buffer -->
+  <text x="540" y="694" class="nome">Buffer circular de eventos · 100 × 8 B = 800 B</text>
+  <g>
+    <rect x="540" y="706" width="800" height="34" rx="8" fill="#e8f5ee"/>
+    <rect x="540" y="706" width="2" height="34" fill="#047857"/>
+  </g>
+  <text x="556" y="729" class="valor">0,25% do heap · guarda os últimos 100 eventos enquanto a rede está fora</text>
+
+  <text x="40" y="806" class="sub" font-size="14">Conclusão: a aplicação é pequena para o ESP32. O que mais consome memória é a pilha de rede (Wi-Fi + TCP/IP + MQTT), não a lógica da fila.</text>
+</svg>

@@ -1,0 +1,7 @@
+flask>=3.0
+paho-mqtt>=2.0
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.4
+matplotlib>=3.8
+pytest>=8
