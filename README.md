@@ -87,4 +87,5 @@ Treino com os dias 1 a 24 e teste com os dias 25 a 30 de um histórico **simulad
 - Wokwi: https://wokwi.com/projects/480520205989381121
 - Relatório técnico: [docs/relatorio/relatorio_tecnico.pdf](docs/relatorio/relatorio_tecnico.pdf)
 - Diagramas: [docs/diagramas/](docs/diagramas/)
-- Vídeo: TODO
+- Vídeo (YouTube, não listado): https://youtu.be/A-b2D2wcZ-c
+- Repositório: https://github.com/rafaperes21/ThriveQueue-CitizenAssist

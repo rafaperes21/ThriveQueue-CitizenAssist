@@ -4,7 +4,7 @@
 <h1>ThriveQueue</h1>
 <p class="subtitulo">Sistema Inteligente de Gerenciamento de Filas Virtuais<br>Projeto integrador Citizen Assist AI · Relatório técnico</p>
 <p class="integrantes">Rafael Marinucci Peres — RM 569729<br>David dos Reis Cardoso — RM 568938</p>
-<p class="links">Simulação (Wokwi): https://wokwi.com/projects/480520205989381121</p>
+<p class="links">Simulação (Wokwi): https://wokwi.com/projects/480520205989381121<br>Vídeo: https://youtu.be/A-b2D2wcZ-c<br>Repositório: https://github.com/rafaperes21/ThriveQueue-CitizenAssist</p>
 <p class="data">São Paulo, novembro de 2026</p>
 </div>
 

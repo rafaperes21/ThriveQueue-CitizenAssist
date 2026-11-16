@@ -31,8 +31,8 @@
 | Teste com o ESP32 do Wokwi ligado ao backend | ✅ Funcionando (12/11). T-01..T-04 com prints em `docs/evidencias/`. Falta o link público do Wokwi no README |
 | Diagramas (sistema, memória, sequência) | ✅ `docs/diagramas/` (SVG + PNG) |
 | Relatório técnico | ✅ `docs/relatorio/relatorio_tecnico.pdf` (14 páginas), gerado por `gerar_pdf.py`. Falta a revisão da dupla |
-| Firmware v2 (rede no núcleo 0) no projeto Wokwi | ⏳ Colar e salvar no Wokwi |
-| Vídeo (até 5 min) | ⏳ Pendente |
+| Firmware v2 (rede no núcleo 0) no projeto Wokwi | ✅ Rodou nas gravações do vídeo (o comando `s` mostra núcleo 0 e 1). Confirmar que foi salvo no Wokwi |
+| Vídeo (até 5 min) | ✅ 4min44s, editado no HyperFrames: https://youtu.be/A-b2D2wcZ-c |
 
 ---
 
