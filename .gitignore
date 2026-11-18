@@ -19,3 +19,4 @@ video-thrivequeue/.waveform-cache/
 
 # zip de entrega (vai pelo portal, nao pelo git)
 *.zip
+video-thrivequeue/.thumbnails/
