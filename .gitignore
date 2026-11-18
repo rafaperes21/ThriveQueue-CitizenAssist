@@ -20,3 +20,8 @@ video-thrivequeue/.waveform-cache/
 # zip de entrega (vai pelo portal, nao pelo git)
 *.zip
 video-thrivequeue/.thumbnails/
+
+# arquivos da ferramenta de edicao do video (nao fazem parte da entrega)
+video-thrivequeue/CLAUDE.md
+video-thrivequeue/AGENTS.md
+video-thrivequeue/SPEC.md
